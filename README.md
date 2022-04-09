@@ -15,6 +15,8 @@ pip install torchtext==0.6.0
 
 
 While using different models, need to change 'hidden_size' in this line appropriately.
+
+
 embedding_dim = bert.config.to_dict()['hidden_size']
 
 
