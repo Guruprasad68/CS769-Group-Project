@@ -19,7 +19,7 @@ class AttentionModel(torch.nn.Module):
 		--------
 		
 		"""
-		self.embedding_length = bert.config.to_dict()['dim']
+		self.embedding_length = bert.config.to_dict()['hidden_size']
 		self.batch_size = batch_size
 		self.output_size = output_size
 		self.hidden_size = hidden_size
