@@ -1,0 +1,796 @@
+DistilBert Tokenizer Loaded...
+Max input length: 150
+Data loading complete
+Number of training examples: 9800
+Number of validation examples: 4200
+Number of test examples: 3131
+defaultdict(None, {'1': 0, '2': 1, '0': 2})
+Device in use: cuda
+Iterators created
+Downloading DistilBert model...
+DistilBert model downloaded
+The BERTLinearSentiment(
+  (bert): DistilBertModel(
+    (embeddings): Embeddings(
+      (word_embeddings): Embedding(30522, 768, padding_idx=0)
+      (position_embeddings): Embedding(512, 768)
+      (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (transformer): Transformer(
+      (layer): ModuleList(
+        (0): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+        (1): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+        (2): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+        (3): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+        (4): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+        (5): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=768, out_features=50, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=50, out_features=3, bias=True)
+  )
+) has 66,401,483 trainable parameters
+Parameters for BERTLinearSentiment(
+  (bert): DistilBertModel(
+    (embeddings): Embeddings(
+      (word_embeddings): Embedding(30522, 768, padding_idx=0)
+      (position_embeddings): Embedding(512, 768)
+      (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (transformer): Transformer(
+      (layer): ModuleList(
+        (0): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+        (1): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+        (2): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+        (3): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+        (4): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+        (5): TransformerBlock(
+          (dropout): Dropout(p=0.1, inplace=False)
+          (attention): MultiHeadSelfAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (q_lin): Linear(in_features=768, out_features=768, bias=True)
+            (k_lin): Linear(in_features=768, out_features=768, bias=True)
+            (v_lin): Linear(in_features=768, out_features=768, bias=True)
+            (out_lin): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (ffn): FFN(
+            (dropout): Dropout(p=0.1, inplace=False)
+            (lin1): Linear(in_features=768, out_features=3072, bias=True)
+            (lin2): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=768, out_features=50, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=50, out_features=3, bias=True)
+  )
+)
+bert.embeddings.word_embeddings.weight
+bert.embeddings.position_embeddings.weight
+bert.embeddings.LayerNorm.weight
+bert.embeddings.LayerNorm.bias
+bert.transformer.layer.0.attention.q_lin.weight
+bert.transformer.layer.0.attention.q_lin.bias
+bert.transformer.layer.0.attention.k_lin.weight
+bert.transformer.layer.0.attention.k_lin.bias
+bert.transformer.layer.0.attention.v_lin.weight
+bert.transformer.layer.0.attention.v_lin.bias
+bert.transformer.layer.0.attention.out_lin.weight
+bert.transformer.layer.0.attention.out_lin.bias
+bert.transformer.layer.0.sa_layer_norm.weight
+bert.transformer.layer.0.sa_layer_norm.bias
+bert.transformer.layer.0.ffn.lin1.weight
+bert.transformer.layer.0.ffn.lin1.bias
+bert.transformer.layer.0.ffn.lin2.weight
+bert.transformer.layer.0.ffn.lin2.bias
+bert.transformer.layer.0.output_layer_norm.weight
+bert.transformer.layer.0.output_layer_norm.bias
+bert.transformer.layer.1.attention.q_lin.weight
+bert.transformer.layer.1.attention.q_lin.bias
+bert.transformer.layer.1.attention.k_lin.weight
+bert.transformer.layer.1.attention.k_lin.bias
+bert.transformer.layer.1.attention.v_lin.weight
+bert.transformer.layer.1.attention.v_lin.bias
+bert.transformer.layer.1.attention.out_lin.weight
+bert.transformer.layer.1.attention.out_lin.bias
+bert.transformer.layer.1.sa_layer_norm.weight
+bert.transformer.layer.1.sa_layer_norm.bias
+bert.transformer.layer.1.ffn.lin1.weight
+bert.transformer.layer.1.ffn.lin1.bias
+bert.transformer.layer.1.ffn.lin2.weight
+bert.transformer.layer.1.ffn.lin2.bias
+bert.transformer.layer.1.output_layer_norm.weight
+bert.transformer.layer.1.output_layer_norm.bias
+bert.transformer.layer.2.attention.q_lin.weight
+bert.transformer.layer.2.attention.q_lin.bias
+bert.transformer.layer.2.attention.k_lin.weight
+bert.transformer.layer.2.attention.k_lin.bias
+bert.transformer.layer.2.attention.v_lin.weight
+bert.transformer.layer.2.attention.v_lin.bias
+bert.transformer.layer.2.attention.out_lin.weight
+bert.transformer.layer.2.attention.out_lin.bias
+bert.transformer.layer.2.sa_layer_norm.weight
+bert.transformer.layer.2.sa_layer_norm.bias
+bert.transformer.layer.2.ffn.lin1.weight
+bert.transformer.layer.2.ffn.lin1.bias
+bert.transformer.layer.2.ffn.lin2.weight
+bert.transformer.layer.2.ffn.lin2.bias
+bert.transformer.layer.2.output_layer_norm.weight
+bert.transformer.layer.2.output_layer_norm.bias
+bert.transformer.layer.3.attention.q_lin.weight
+bert.transformer.layer.3.attention.q_lin.bias
+bert.transformer.layer.3.attention.k_lin.weight
+bert.transformer.layer.3.attention.k_lin.bias
+bert.transformer.layer.3.attention.v_lin.weight
+bert.transformer.layer.3.attention.v_lin.bias
+bert.transformer.layer.3.attention.out_lin.weight
+bert.transformer.layer.3.attention.out_lin.bias
+bert.transformer.layer.3.sa_layer_norm.weight
+bert.transformer.layer.3.sa_layer_norm.bias
+bert.transformer.layer.3.ffn.lin1.weight
+bert.transformer.layer.3.ffn.lin1.bias
+bert.transformer.layer.3.ffn.lin2.weight
+bert.transformer.layer.3.ffn.lin2.bias
+bert.transformer.layer.3.output_layer_norm.weight
+bert.transformer.layer.3.output_layer_norm.bias
+bert.transformer.layer.4.attention.q_lin.weight
+bert.transformer.layer.4.attention.q_lin.bias
+bert.transformer.layer.4.attention.k_lin.weight
+bert.transformer.layer.4.attention.k_lin.bias
+bert.transformer.layer.4.attention.v_lin.weight
+bert.transformer.layer.4.attention.v_lin.bias
+bert.transformer.layer.4.attention.out_lin.weight
+bert.transformer.layer.4.attention.out_lin.bias
+bert.transformer.layer.4.sa_layer_norm.weight
+bert.transformer.layer.4.sa_layer_norm.bias
+bert.transformer.layer.4.ffn.lin1.weight
+bert.transformer.layer.4.ffn.lin1.bias
+bert.transformer.layer.4.ffn.lin2.weight
+bert.transformer.layer.4.ffn.lin2.bias
+bert.transformer.layer.4.output_layer_norm.weight
+bert.transformer.layer.4.output_layer_norm.bias
+bert.transformer.layer.5.attention.q_lin.weight
+bert.transformer.layer.5.attention.q_lin.bias
+bert.transformer.layer.5.attention.k_lin.weight
+bert.transformer.layer.5.attention.k_lin.bias
+bert.transformer.layer.5.attention.v_lin.weight
+bert.transformer.layer.5.attention.v_lin.bias
+bert.transformer.layer.5.attention.out_lin.weight
+bert.transformer.layer.5.attention.out_lin.bias
+bert.transformer.layer.5.sa_layer_norm.weight
+bert.transformer.layer.5.sa_layer_norm.bias
+bert.transformer.layer.5.ffn.lin1.weight
+bert.transformer.layer.5.ffn.lin1.bias
+bert.transformer.layer.5.ffn.lin2.weight
+bert.transformer.layer.5.ffn.lin2.bias
+bert.transformer.layer.5.output_layer_norm.weight
+bert.transformer.layer.5.output_layer_norm.bias
+classifier.0.weight
+classifier.0.bias
+classifier.3.weight
+classifier.3.bias
+../checkpoint/linear_model.txt
+Epoch: 01 | Epoch Time: 2m 8s
+	Train Loss: 1.031 | Train Acc: 44.90%
+	 Val. Loss: 0.971 |  Val. Acc: 49.95%
+tensor([0.1319, 0.6464, 0.7130, 0.4257])
+tensor([[224., 595., 798.],
+        [ 69., 941., 345.],
+        [119., 173., 936.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 02 | Epoch Time: 2m 7s
+	Train Loss: 0.925 | Train Acc: 54.54%
+	 Val. Loss: 0.911 |  Val. Acc: 54.69%
+tensor([0.2456, 0.6881, 0.7214, 0.5005])
+tensor([[406., 520., 691.],
+        [140., 971., 244.],
+        [183., 124., 921.]], dtype=torch.float64)
+Epoch: 03 | Epoch Time: 2m 8s
+	Train Loss: 0.868 | Train Acc: 58.80%
+	 Val. Loss: 0.904 |  Val. Acc: 55.18%
+tensor([0.2133, 0.6712, 0.8118, 0.4988])
+tensor([[ 354.,  476.,  787.],
+        [ 158.,  939.,  258.],
+        [ 106.,   96., 1026.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 04 | Epoch Time: 2m 7s
+	Train Loss: 0.865 | Train Acc: 59.23%
+	 Val. Loss: 0.907 |  Val. Acc: 55.59%
+tensor([0.3166, 0.7143, 0.6380, 0.5194])
+tensor([[517., 559., 541.],
+        [172., 998., 185.],
+        [253., 157., 818.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 05 | Epoch Time: 2m 8s
+	Train Loss: 0.808 | Train Acc: 63.69%
+	 Val. Loss: 0.888 |  Val. Acc: 56.13%
+tensor([0.5823, 0.5890, 0.4495, 0.5350])
+tensor([[947., 366., 304.],
+        [411., 833., 111.],
+        [579.,  76., 573.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 06 | Epoch Time: 2m 7s
+	Train Loss: 0.742 | Train Acc: 67.84%
+	 Val. Loss: 0.903 |  Val. Acc: 56.82%
+tensor([0.4607, 0.5978, 0.6258, 0.5432])
+tensor([[750., 402., 465.],
+        [337., 847., 171.],
+        [358.,  85., 785.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 07 | Epoch Time: 2m 7s
+	Train Loss: 0.663 | Train Acc: 72.78%
+	 Val. Loss: 0.938 |  Val. Acc: 56.82%
+tensor([0.4122, 0.6337, 0.6537, 0.5435])
+tensor([[677., 429., 511.],
+        [288., 894., 173.],
+        [317.,  94., 817.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 08 | Epoch Time: 2m 7s
+	Train Loss: 0.582 | Train Acc: 76.60%
+	 Val. Loss: 0.999 |  Val. Acc: 56.96%
+tensor([0.5351, 0.6088, 0.5370, 0.5473])
+tensor([[866., 403., 348.],
+        [361., 859., 135.],
+        [475.,  87., 666.]], dtype=torch.float64)
+Epoch: 09 | Epoch Time: 2m 7s
+	Train Loss: 0.507 | Train Acc: 79.98%
+	 Val. Loss: 1.056 |  Val. Acc: 56.61%
+tensor([0.3856, 0.6388, 0.6589, 0.5356])
+tensor([[633., 462., 522.],
+        [254., 911., 190.],
+        [287., 106., 835.]], dtype=torch.float64)
+Epoch: 10 | Epoch Time: 2m 7s
+	Train Loss: 0.500 | Train Acc: 80.43%
+	 Val. Loss: 1.064 |  Val. Acc: 56.91%
+tensor([0.5703, 0.5524, 0.5459, 0.5464])
+tensor([[922., 327., 368.],
+        [439., 783., 133.],
+        [474.,  73., 681.]], dtype=torch.float64)
+Epoch: 11 | Epoch Time: 2m 7s
+	Train Loss: 0.497 | Train Acc: 80.85%
+	 Val. Loss: 1.070 |  Val. Acc: 56.51%
+tensor([0.5864, 0.5697, 0.5032, 0.5441])
+tensor([[952., 340., 325.],
+        [441., 796., 118.],
+        [514.,  90., 624.]], dtype=torch.float64)
+Epoch: 12 | Epoch Time: 2m 7s
+	Train Loss: 0.491 | Train Acc: 81.25%
+	 Val. Loss: 1.061 |  Val. Acc: 57.29%
+tensor([0.4622, 0.5580, 0.6748, 0.5460])
+tensor([[755., 331., 531.],
+        [367., 794., 194.],
+        [305.,  67., 856.]], dtype=torch.float64)
+Epoch: 13 | Epoch Time: 2m 7s
+	Train Loss: 0.495 | Train Acc: 81.22%
+	 Val. Loss: 1.064 |  Val. Acc: 56.56%
+tensor([0.4915, 0.6390, 0.5407, 0.5436])
+tensor([[791., 457., 369.],
+        [316., 903., 136.],
+        [435., 113., 680.]], dtype=torch.float64)
+Epoch: 14 | Epoch Time: 2m 7s
+	Train Loss: 0.496 | Train Acc: 80.84%
+	 Val. Loss: 1.082 |  Val. Acc: 56.20%
+tensor([0.4527, 0.6560, 0.5650, 0.5403])
+tensor([[734., 480., 403.],
+        [294., 919., 142.],
+        [378., 141., 709.]], dtype=torch.float64)
+Epoch: 15 | Epoch Time: 2m 7s
+	Train Loss: 0.502 | Train Acc: 80.79%
+	 Val. Loss: 1.072 |  Val. Acc: 56.30%
+tensor([0.4203, 0.6679, 0.5913, 0.5377])
+tensor([[679., 510., 428.],
+        [254., 944., 157.],
+        [341., 141., 746.]], dtype=torch.float64)
+Epoch: 16 | Epoch Time: 2m 7s
+	Train Loss: 0.503 | Train Acc: 80.49%
+	 Val. Loss: 1.076 |  Val. Acc: 55.94%
+tensor([0.3901, 0.6877, 0.6026, 0.5345])
+tensor([[631., 537., 449.],
+        [239., 962., 154.],
+        [314., 153., 761.]], dtype=torch.float64)
+Epoch: 17 | Epoch Time: 2m 7s
+	Train Loss: 0.494 | Train Acc: 81.07%
+	 Val. Loss: 1.035 |  Val. Acc: 56.53%
+tensor([0.4506, 0.6392, 0.5993, 0.5421])
+tensor([[729., 443., 445.],
+        [307., 896., 152.],
+        [369., 108., 751.]], dtype=torch.float64)
+Epoch: 18 | Epoch Time: 2m 7s
+	Train Loss: 0.501 | Train Acc: 80.54%
+	 Val. Loss: 1.045 |  Val. Acc: 56.82%
+tensor([0.4340, 0.6425, 0.6147, 0.5443])
+tensor([[704., 461., 452.],
+        [289., 906., 160.],
+        [344., 106., 778.]], dtype=torch.float64)
+Epoch: 19 | Epoch Time: 2m 7s
+	Train Loss: 0.493 | Train Acc: 81.44%
+	 Val. Loss: 1.052 |  Val. Acc: 56.53%
+tensor([0.4968, 0.5965, 0.5824, 0.5447])
+tensor([[801., 393., 423.],
+        [358., 846., 151.],
+        [411.,  91., 726.]], dtype=torch.float64)
+Epoch: 20 | Epoch Time: 2m 7s
+	Train Loss: 0.496 | Train Acc: 80.96%
+	 Val. Loss: 1.083 |  Val. Acc: 55.42%
+tensor([0.4221, 0.7070, 0.5312, 0.5323])
+tensor([[688., 578., 351.],
+        [248., 988., 119.],
+        [396., 176., 656.]], dtype=torch.float64)
+Epoch: 21 | Epoch Time: 2m 7s
+	Train Loss: 0.491 | Train Acc: 81.14%
+	 Val. Loss: 1.079 |  Val. Acc: 56.27%
+tensor([0.4065, 0.6358, 0.6422, 0.5375])
+tensor([[666., 455., 496.],
+        [281., 893., 181.],
+        [294., 125., 809.]], dtype=torch.float64)
+Epoch: 22 | Epoch Time: 2m 7s
+	Train Loss: 0.499 | Train Acc: 80.78%
+	 Val. Loss: 1.066 |  Val. Acc: 55.66%
+tensor([0.3445, 0.5706, 0.7458, 0.5199])
+tensor([[571., 372., 674.],
+        [285., 817., 253.],
+        [207.,  70., 951.]], dtype=torch.float64)
+Epoch: 23 | Epoch Time: 2m 7s
+	Train Loss: 0.498 | Train Acc: 80.72%
+	 Val. Loss: 1.059 |  Val. Acc: 56.25%
+tensor([0.4084, 0.5879, 0.6843, 0.5362])
+tensor([[667., 384., 566.],
+        [309., 837., 209.],
+        [288.,  80., 860.]], dtype=torch.float64)
+Epoch: 24 | Epoch Time: 2m 7s
+	Train Loss: 0.495 | Train Acc: 81.06%
+	 Val. Loss: 1.098 |  Val. Acc: 55.82%
+tensor([0.3905, 0.6704, 0.6102, 0.5310])
+tensor([[634., 515., 468.],
+        [254., 942., 159.],
+        [309., 152., 767.]], dtype=torch.float64)
+Epoch: 25 | Epoch Time: 2m 7s
+	Train Loss: 0.492 | Train Acc: 81.06%
+	 Val. Loss: 1.089 |  Val. Acc: 55.82%
+tensor([0.3594, 0.6469, 0.6683, 0.5275])
+tensor([[588., 468., 561.],
+        [251., 909., 195.],
+        [256., 120., 852.]], dtype=torch.float64)
+Epoch: 26 | Epoch Time: 2m 7s
+	Train Loss: 0.492 | Train Acc: 81.30%
+	 Val. Loss: 1.047 |  Val. Acc: 57.29%
+tensor([0.4857, 0.5882, 0.6033, 0.5448])
+tensor([[789., 392., 436.],
+        [333., 850., 172.],
+        [378.,  84., 766.]], dtype=torch.float64)
+Epoch: 27 | Epoch Time: 2m 7s
+	Train Loss: 0.495 | Train Acc: 81.22%
+	 Val. Loss: 1.086 |  Val. Acc: 57.05%
+tensor([0.4984, 0.5495, 0.6291, 0.5429])
+tensor([[812., 332., 473.],
+        [401., 782., 172.],
+        [360.,  67., 801.]], dtype=torch.float64)
+Epoch: 28 | Epoch Time: 2m 7s
+	Train Loss: 0.492 | Train Acc: 80.77%
+	 Val. Loss: 1.090 |  Val. Acc: 56.68%
+tensor([0.5155, 0.6092, 0.5468, 0.5444])
+tensor([[835., 398., 384.],
+        [350., 859., 146.],
+        [449.,  94., 685.]], dtype=torch.float64)
+Epoch: 29 | Epoch Time: 2m 7s
+	Train Loss: 0.494 | Train Acc: 80.88%
+	 Val. Loss: 1.058 |  Val. Acc: 56.39%
+tensor([0.4137, 0.6448, 0.6188, 0.5369])
+tensor([[670., 473., 474.],
+        [273., 921., 161.],
+        [339., 110., 779.]], dtype=torch.float64)
+Epoch: 30 | Epoch Time: 2m 7s
+	Train Loss: 0.492 | Train Acc: 80.99%
+	 Val. Loss: 1.072 |  Val. Acc: 56.65%
+tensor([0.3790, 0.6043, 0.7176, 0.5370])
+tensor([[621., 412., 584.],
+        [279., 856., 220.],
+        [244.,  80., 904.]], dtype=torch.float64)
+Epoch: 31 | Epoch Time: 2m 7s
+	Train Loss: 0.494 | Train Acc: 80.99%
+	 Val. Loss: 1.064 |  Val. Acc: 56.70%
+tensor([0.4318, 0.6033, 0.6577, 0.5428])
+tensor([[701., 421., 495.],
+        [310., 862., 183.],
+        [316.,  95., 817.]], dtype=torch.float64)
+Epoch: 32 | Epoch Time: 2m 7s
+	Train Loss: 0.485 | Train Acc: 81.69%
+	 Val. Loss: 1.091 |  Val. Acc: 57.20%
+tensor([0.4469, 0.5944, 0.6411, 0.5417])
+tensor([[730., 395., 492.],
+        [323., 852., 180.],
+        [310.,  99., 819.]], dtype=torch.float64)
+Epoch: 33 | Epoch Time: 2m 7s
+	Train Loss: 0.495 | Train Acc: 81.37%
+	 Val. Loss: 1.057 |  Val. Acc: 56.08%
+tensor([0.5005, 0.5974, 0.5504, 0.5374])
+tensor([[812., 412., 393.],
+        [349., 849., 157.],
+        [426., 106., 696.]], dtype=torch.float64)
+Epoch: 34 | Epoch Time: 2m 8s
+	Train Loss: 0.495 | Train Acc: 81.08%
+	 Val. Loss: 1.062 |  Val. Acc: 56.30%
+tensor([0.4417, 0.6250, 0.6093, 0.5393])
+tensor([[719., 442., 456.],
+        [323., 874., 158.],
+        [340., 115., 773.]], dtype=torch.float64)
+Epoch: 35 | Epoch Time: 2m 7s
+	Train Loss: 0.496 | Train Acc: 80.90%
+	 Val. Loss: 1.066 |  Val. Acc: 56.25%
+tensor([0.3888, 0.6023, 0.6861, 0.5341])
+tensor([[638., 420., 559.],
+        [289., 866., 200.],
+        [281.,  87., 860.]], dtype=torch.float64)
+Epoch: 36 | Epoch Time: 2m 7s
+	Train Loss: 0.489 | Train Acc: 80.92%
+	 Val. Loss: 1.051 |  Val. Acc: 56.84%
+tensor([0.5168, 0.5735, 0.5801, 0.5437])
+tensor([[837., 359., 421.],
+        [390., 812., 153.],
+        [410.,  81., 737.]], dtype=torch.float64)
+Epoch: 37 | Epoch Time: 2m 8s
+	Train Loss: 0.499 | Train Acc: 80.19%
+	 Val. Loss: 1.044 |  Val. Acc: 56.39%
+tensor([0.4870, 0.5957, 0.5845, 0.5407])
+tensor([[791., 403., 423.],
+        [341., 851., 163.],
+        [411.,  89., 728.]], dtype=torch.float64)
+Epoch: 38 | Epoch Time: 2m 7s
+	Train Loss: 0.504 | Train Acc: 80.55%
+	 Val. Loss: 1.063 |  Val. Acc: 56.68%
+tensor([0.4082, 0.6481, 0.6282, 0.5381])
+tensor([[665., 469., 483.],
+        [269., 913., 173.],
+        [308., 119., 801.]], dtype=torch.float64)
+Epoch: 39 | Epoch Time: 2m 7s
+	Train Loss: 0.489 | Train Acc: 81.62%
+	 Val. Loss: 1.108 |  Val. Acc: 55.75%
+tensor([0.3833, 0.6728, 0.6160, 0.5317])
+tensor([[627., 526., 464.],
+        [245., 947., 163.],
+        [302., 154., 772.]], dtype=torch.float64)
+Epoch: 40 | Epoch Time: 2m 7s
+	Train Loss: 0.497 | Train Acc: 80.74%
+	 Val. Loss: 1.035 |  Val. Acc: 56.39%
+tensor([0.4981, 0.6165, 0.5563, 0.5429])
+tensor([[805., 423., 389.],
+        [348., 864., 143.],
+        [428., 102., 698.]], dtype=torch.float64)
+Epoch: 41 | Epoch Time: 2m 7s
+	Train Loss: 0.492 | Train Acc: 81.24%
+	 Val. Loss: 1.076 |  Val. Acc: 56.37%
+tensor([0.3747, 0.6509, 0.6600, 0.5334])
+tensor([[613., 469., 535.],
+        [246., 917., 192.],
+        [266., 120., 842.]], dtype=torch.float64)
+Epoch: 42 | Epoch Time: 2m 7s
+	Train Loss: 0.492 | Train Acc: 81.14%
+	 Val. Loss: 1.076 |  Val. Acc: 55.61%
+tensor([0.4561, 0.6700, 0.5300, 0.5335])
+tensor([[735., 510., 372.],
+        [280., 942., 133.],
+        [419., 149., 660.]], dtype=torch.float64)
+Epoch: 43 | Epoch Time: 2m 8s
+	Train Loss: 0.492 | Train Acc: 80.85%
+	 Val. Loss: 1.108 |  Val. Acc: 56.37%
+tensor([0.5230, 0.6296, 0.5066, 0.5407])
+tensor([[846., 446., 325.],
+        [354., 881., 120.],
+        [475., 117., 636.]], dtype=torch.float64)
+Epoch: 44 | Epoch Time: 2m 8s
+	Train Loss: 0.497 | Train Acc: 81.22%
+	 Val. Loss: 1.070 |  Val. Acc: 56.89%
+tensor([0.5464, 0.6106, 0.5023, 0.5452])
+tensor([[885., 411., 321.],
+        [359., 872., 124.],
+        [500.,  97., 631.]], dtype=torch.float64)
+Epoch: 45 | Epoch Time: 2m 8s
+	Train Loss: 0.495 | Train Acc: 80.99%
+	 Val. Loss: 1.034 |  Val. Acc: 56.89%
+tensor([0.5780, 0.5353, 0.5514, 0.5457])
+tensor([[938., 314., 365.],
+        [446., 765., 144.],
+        [478.,  62., 688.]], dtype=torch.float64)
+Epoch: 46 | Epoch Time: 2m 8s
+	Train Loss: 0.496 | Train Acc: 80.96%
+	 Val. Loss: 1.054 |  Val. Acc: 56.16%
+tensor([0.5358, 0.6217, 0.5008, 0.5392])
+tensor([[867., 429., 321.],
+        [362., 878., 115.],
+        [496., 117., 615.]], dtype=torch.float64)
+Epoch: 47 | Epoch Time: 2m 8s
+	Train Loss: 0.486 | Train Acc: 81.30%
+	 Val. Loss: 1.057 |  Val. Acc: 56.56%
+tensor([0.4939, 0.6047, 0.5665, 0.5406])
+tensor([[796., 419., 402.],
+        [349., 861., 145.],
+        [413.,  98., 717.]], dtype=torch.float64)
+Epoch: 48 | Epoch Time: 2m 7s
+	Train Loss: 0.501 | Train Acc: 80.57%
+	 Val. Loss: 1.074 |  Val. Acc: 56.04%
+tensor([0.3097, 0.6137, 0.7672, 0.5238])
+tensor([[515., 431., 671.],
+        [235., 876., 244.],
+        [177.,  87., 964.]], dtype=torch.float64)
+Epoch: 49 | Epoch Time: 2m 7s
+	Train Loss: 0.497 | Train Acc: 80.76%
+	 Val. Loss: 1.068 |  Val. Acc: 56.25%
+tensor([0.5106, 0.5804, 0.5608, 0.5399])
+tensor([[830., 378., 409.],
+        [391., 823., 141.],
+        [435.,  85., 708.]], dtype=torch.float64)
+Epoch: 50 | Epoch Time: 2m 7s
+	Train Loss: 0.494 | Train Acc: 80.74%
+	 Val. Loss: 1.077 |  Val. Acc: 56.46%
+tensor([0.3946, 0.6279, 0.6666, 0.5371])
+tensor([[644., 439., 534.],
+        [285., 888., 182.],
+        [278., 109., 841.]], dtype=torch.float64)
+Epoch: 51 | Epoch Time: 2m 7s
+	Train Loss: 0.496 | Train Acc: 80.88%
+	 Val. Loss: 1.059 |  Val. Acc: 56.79%
+tensor([0.4490, 0.6058, 0.6303, 0.5428])
+tensor([[729., 403., 485.],
+        [324., 859., 172.],
+        [350.,  82., 796.]], dtype=torch.float64)
+Epoch: 52 | Epoch Time: 2m 7s
+	Train Loss: 0.494 | Train Acc: 81.12%
+	 Val. Loss: 1.070 |  Val. Acc: 56.94%
+tensor([0.4764, 0.6112, 0.6004, 0.5463])
+tensor([[768., 415., 434.],
+        [329., 864., 162.],
+        [373.,  97., 758.]], dtype=torch.float64)
+Epoch: 53 | Epoch Time: 2m 7s
+	Train Loss: 0.502 | Train Acc: 81.07%
+	 Val. Loss: 1.047 |  Val. Acc: 56.34%
+tensor([0.4218, 0.6441, 0.6182, 0.5396])
+tensor([[690., 476., 451.],
+        [289., 904., 162.],
+        [323., 128., 777.]], dtype=torch.float64)
+Epoch: 54 | Epoch Time: 2m 7s
+	Train Loss: 0.493 | Train Acc: 80.90%
+	 Val. Loss: 1.052 |  Val. Acc: 55.97%
+tensor([0.5929, 0.5716, 0.4681, 0.5349])
+tensor([[960., 377., 280.],
+        [444., 813.,  98.],
+        [565.,  87., 576.]], dtype=torch.float64)
+Epoch: 55 | Epoch Time: 2m 7s
+	Train Loss: 0.501 | Train Acc: 80.33%
+	 Val. Loss: 1.053 |  Val. Acc: 56.44%
+tensor([0.4309, 0.6812, 0.5565, 0.5364])
+tensor([[695., 532., 390.],
+        [239., 967., 149.],
+        [385., 139., 704.]], dtype=torch.float64)
+Epoch: 56 | Epoch Time: 2m 7s
+	Train Loss: 0.495 | Train Acc: 80.65%
+	 Val. Loss: 1.070 |  Val. Acc: 55.71%
+tensor([0.3625, 0.6081, 0.6936, 0.5259])
+tensor([[594., 435., 588.],
+        [266., 867., 222.],
+        [260.,  88., 880.]], dtype=torch.float64)
+Epoch: 57 | Epoch Time: 2m 8s
+	Train Loss: 0.498 | Train Acc: 80.90%
+	 Val. Loss: 1.062 |  Val. Acc: 56.63%
+tensor([0.4765, 0.5545, 0.6390, 0.5419])
+tensor([[777., 362., 478.],
+        [368., 801., 186.],
+        [360.,  69., 799.]], dtype=torch.float64)
+Epoch: 58 | Epoch Time: 2m 7s
+	Train Loss: 0.496 | Train Acc: 80.63%
+	 Val. Loss: 1.060 |  Val. Acc: 56.72%
+tensor([0.4261, 0.6190, 0.6432, 0.5407])
+tensor([[695., 433., 489.],
+        [295., 881., 179.],
+        [320., 100., 808.]], dtype=torch.float64)
+Epoch: 59 | Epoch Time: 2m 7s
+	Train Loss: 0.491 | Train Acc: 81.37%
+	 Val. Loss: 1.040 |  Val. Acc: 56.39%
+tensor([0.4573, 0.5920, 0.6110, 0.5392])
+tensor([[743., 403., 471.],
+        [336., 845., 174.],
+        [360.,  86., 782.]], dtype=torch.float64)
+Epoch: 60 | Epoch Time: 2m 7s
+	Train Loss: 0.495 | Train Acc: 81.32%
+	 Val. Loss: 1.111 |  Val. Acc: 54.97%
+tensor([0.5112, 0.6627, 0.4507, 0.5261])
+tensor([[825., 502., 290.],
+        [321., 929., 105.],
+        [498., 174., 556.]], dtype=torch.float64)
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-8-4510b3f80b89> in <module>()
+    325     file.close()
+    326 
+--> 327 valid_loss, valid_acc, tot = evaluate(model, test_iterator, criterion)
+    328 
+    329 print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc: {valid_acc*100:.2f}%')
+
+ValueError: too many values to unpack (expected 3)
