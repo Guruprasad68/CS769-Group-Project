@@ -1,0 +1,355 @@
+Device in use: cuda
+ai4bharat/indic-bert Tokenizer Loaded...
+Max input length: 150
+Data loading complete
+Number of training examples: 14000
+Number of validation examples: 3000
+Number of test examples: 2999
+defaultdict(None, {'1': 0, '2': 1, '0': 2})
+Iterators created
+Downloading ai4bharat/indic-bert model...
+Some weights of the model checkpoint at ai4bharat/indic-bert were not used when initializing AlbertModel: ['sop_classifier.classifier.bias', 'predictions.dense.bias', 'predictions.decoder.bias', 'predictions.LayerNorm.bias', 'predictions.dense.weight', 'predictions.bias', 'sop_classifier.classifier.weight', 'predictions.decoder.weight', 'predictions.LayerNorm.weight']
+- This IS expected if you are initializing AlbertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing AlbertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+ai4bharat/indic-bert model downloaded
+The BERTLinearSentiment(
+  (bert): AlbertModel(
+    (embeddings): AlbertEmbeddings(
+      (word_embeddings): Embedding(200000, 128, padding_idx=0)
+      (position_embeddings): Embedding(512, 128)
+      (token_type_embeddings): Embedding(2, 128)
+      (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+      (dropout): Dropout(p=0, inplace=False)
+    )
+    (encoder): AlbertTransformer(
+      (embedding_hidden_mapping_in): Linear(in_features=128, out_features=768, bias=True)
+      (albert_layer_groups): ModuleList(
+        (0): AlbertLayerGroup(
+          (albert_layers): ModuleList(
+            (0): AlbertLayer(
+              (full_layer_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (attention): AlbertAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (attention_dropout): Dropout(p=0, inplace=False)
+                (output_dropout): Dropout(p=0, inplace=False)
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              )
+              (ffn): Linear(in_features=768, out_features=3072, bias=True)
+              (ffn_output): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+              (dropout): Dropout(p=0, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (pooler): Linear(in_features=768, out_features=768, bias=True)
+    (pooler_activation): Tanh()
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=768, out_features=50, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=50, out_features=3, bias=True)
+  )
+) has 33,482,187 trainable parameters
+Parameters for BERTLinearSentiment(
+  (bert): AlbertModel(
+    (embeddings): AlbertEmbeddings(
+      (word_embeddings): Embedding(200000, 128, padding_idx=0)
+      (position_embeddings): Embedding(512, 128)
+      (token_type_embeddings): Embedding(2, 128)
+      (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+      (dropout): Dropout(p=0, inplace=False)
+    )
+    (encoder): AlbertTransformer(
+      (embedding_hidden_mapping_in): Linear(in_features=128, out_features=768, bias=True)
+      (albert_layer_groups): ModuleList(
+        (0): AlbertLayerGroup(
+          (albert_layers): ModuleList(
+            (0): AlbertLayer(
+              (full_layer_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (attention): AlbertAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (attention_dropout): Dropout(p=0, inplace=False)
+                (output_dropout): Dropout(p=0, inplace=False)
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              )
+              (ffn): Linear(in_features=768, out_features=3072, bias=True)
+              (ffn_output): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+              (dropout): Dropout(p=0, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (pooler): Linear(in_features=768, out_features=768, bias=True)
+    (pooler_activation): Tanh()
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=768, out_features=50, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.3, inplace=False)
+    (3): Linear(in_features=50, out_features=3, bias=True)
+  )
+)
+bert.embeddings.word_embeddings.weight
+bert.embeddings.position_embeddings.weight
+bert.embeddings.token_type_embeddings.weight
+bert.embeddings.LayerNorm.weight
+bert.embeddings.LayerNorm.bias
+bert.encoder.embedding_hidden_mapping_in.weight
+bert.encoder.embedding_hidden_mapping_in.bias
+bert.encoder.albert_layer_groups.0.albert_layers.0.full_layer_layer_norm.weight
+bert.encoder.albert_layer_groups.0.albert_layers.0.full_layer_layer_norm.bias
+bert.encoder.albert_layer_groups.0.albert_layers.0.attention.query.weight
+bert.encoder.albert_layer_groups.0.albert_layers.0.attention.query.bias
+bert.encoder.albert_layer_groups.0.albert_layers.0.attention.key.weight
+bert.encoder.albert_layer_groups.0.albert_layers.0.attention.key.bias
+bert.encoder.albert_layer_groups.0.albert_layers.0.attention.value.weight
+bert.encoder.albert_layer_groups.0.albert_layers.0.attention.value.bias
+bert.encoder.albert_layer_groups.0.albert_layers.0.attention.dense.weight
+bert.encoder.albert_layer_groups.0.albert_layers.0.attention.dense.bias
+bert.encoder.albert_layer_groups.0.albert_layers.0.attention.LayerNorm.weight
+bert.encoder.albert_layer_groups.0.albert_layers.0.attention.LayerNorm.bias
+bert.encoder.albert_layer_groups.0.albert_layers.0.ffn.weight
+bert.encoder.albert_layer_groups.0.albert_layers.0.ffn.bias
+bert.encoder.albert_layer_groups.0.albert_layers.0.ffn_output.weight
+bert.encoder.albert_layer_groups.0.albert_layers.0.ffn_output.bias
+bert.pooler.weight
+bert.pooler.bias
+classifier.0.weight
+classifier.0.bias
+classifier.3.weight
+classifier.3.bias
+../checkpoint/linear_model.txt
+Epoch: 01 | Epoch Time: 3m 22s
+	Train Loss: 1.081 | Train Acc: 39.67%
+	 Val. Loss: 1.014 |  Val. Acc: 48.77%
+tensor([0.2048, 0.5768, 0.7214, 0.4407])
+tensor([[247., 319., 562.],
+        [192., 556., 234.],
+        [106., 124., 660.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 02 | Epoch Time: 3m 22s
+	Train Loss: 1.028 | Train Acc: 51.13%
+	 Val. Loss: 0.985 |  Val. Acc: 52.55%
+tensor([0.3984, 0.5313, 0.6473, 0.5041])
+tensor([[462., 208., 458.],
+        [316., 515., 151.],
+        [240.,  51., 599.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 03 | Epoch Time: 3m 22s
+	Train Loss: 0.992 | Train Acc: 55.42%
+	 Val. Loss: 1.014 |  Val. Acc: 55.91%
+tensor([0.4053, 0.6935, 0.5767, 0.5395])
+tensor([[465., 316., 347.],
+        [181., 679., 122.],
+        [267.,  90., 533.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 04 | Epoch Time: 3m 22s
+	Train Loss: 0.959 | Train Acc: 59.15%
+	 Val. Loss: 1.022 |  Val. Acc: 56.83%
+tensor([0.3926, 0.6839, 0.6187, 0.5437])
+tensor([[452., 302., 374.],
+        [175., 671., 136.],
+        [229.,  79., 582.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 05 | Epoch Time: 3m 23s
+	Train Loss: 0.927 | Train Acc: 62.54%
+	 Val. Loss: 1.113 |  Val. Acc: 57.13%
+tensor([0.4728, 0.6412, 0.5789, 0.5507])
+tensor([[538., 277., 313.],
+        [244., 631., 107.],
+        [268.,  77., 545.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 06 | Epoch Time: 3m 22s
+	Train Loss: 0.890 | Train Acc: 67.02%
+	 Val. Loss: 1.236 |  Val. Acc: 57.68%
+tensor([0.4870, 0.6073, 0.6055, 0.5536])
+tensor([[562., 217., 349.],
+        [261., 598., 123.],
+        [267.,  53., 570.]], dtype=torch.float64)
+Epoch: 07 | Epoch Time: 3m 22s
+	Train Loss: 0.856 | Train Acc: 70.37%
+	 Val. Loss: 1.383 |  Val. Acc: 56.12%
+tensor([0.5131, 0.5716, 0.5647, 0.5412])
+tensor([[588., 211., 329.],
+        [303., 563., 116.],
+        [306.,  51., 533.]], dtype=torch.float64)
+Epoch: 08 | Epoch Time: 3m 22s
+	Train Loss: 0.831 | Train Acc: 72.71%
+	 Val. Loss: 1.493 |  Val. Acc: 56.79%
+tensor([0.5219, 0.5943, 0.5717, 0.5535])
+tensor([[595., 232., 301.],
+        [291., 580., 111.],
+        [301.,  60., 529.]], dtype=torch.float64)
+Epoch: 09 | Epoch Time: 3m 22s
+	Train Loss: 0.805 | Train Acc: 75.15%
+	 Val. Loss: 1.639 |  Val. Acc: 56.79%
+tensor([0.5588, 0.6448, 0.4668, 0.5501])
+tensor([[638., 296., 194.],
+        [281., 635.,  66.],
+        [374.,  85., 431.]], dtype=torch.float64)
+Epoch: 10 | Epoch Time: 3m 22s
+	Train Loss: 0.786 | Train Acc: 77.03%
+	 Val. Loss: 1.793 |  Val. Acc: 55.55%
+tensor([0.5024, 0.5447, 0.6045, 0.5390])
+tensor([[574., 203., 351.],
+        [314., 534., 134.],
+        [266.,  66., 558.]], dtype=torch.float64)
+Epoch: 11 | Epoch Time: 3m 22s
+	Train Loss: 0.771 | Train Acc: 78.45%
+	 Val. Loss: 1.935 |  Val. Acc: 55.29%
+tensor([0.4932, 0.6371, 0.5089, 0.5353])
+tensor([[564., 316., 248.],
+        [276., 628.,  78.],
+        [330.,  93., 467.]], dtype=torch.float64)
+Epoch: 12 | Epoch Time: 3m 21s
+	Train Loss: 0.755 | Train Acc: 79.97%
+	 Val. Loss: 2.006 |  Val. Acc: 55.46%
+tensor([0.4732, 0.5816, 0.5961, 0.5382])
+tensor([[542., 271., 315.],
+        [290., 575., 117.],
+        [277.,  66., 547.]], dtype=torch.float64)
+Epoch: 13 | Epoch Time: 3m 22s
+	Train Loss: 0.751 | Train Acc: 80.30%
+	 Val. Loss: 2.099 |  Val. Acc: 55.87%
+tensor([0.4198, 0.6554, 0.6023, 0.5400])
+tensor([[479., 312., 337.],
+        [218., 645., 119.],
+        [242.,  95., 553.]], dtype=torch.float64)
+Epoch: 14 | Epoch Time: 3m 22s
+	Train Loss: 0.745 | Train Acc: 80.79%
+	 Val. Loss: 2.239 |  Val. Acc: 55.73%
+tensor([0.5434, 0.5344, 0.5720, 0.5427])
+tensor([[622., 202., 304.],
+        [356., 523., 103.],
+        [306.,  57., 527.]], dtype=torch.float64)
+Epoch: 15 | Epoch Time: 3m 22s
+	Train Loss: 0.734 | Train Acc: 81.81%
+	 Val. Loss: 2.352 |  Val. Acc: 55.82%
+tensor([0.4378, 0.6614, 0.5754, 0.5415])
+tensor([[499., 327., 302.],
+        [228., 647., 107.],
+        [272.,  89., 529.]], dtype=torch.float64)
+Epoch: 16 | Epoch Time: 3m 22s
+	Train Loss: 0.729 | Train Acc: 82.32%
+	 Val. Loss: 2.463 |  Val. Acc: 54.38%
+tensor([0.4770, 0.6074, 0.5333, 0.5285])
+tensor([[545., 302., 281.],
+        [289., 594.,  99.],
+        [316.,  82., 492.]], dtype=torch.float64)
+Epoch: 17 | Epoch Time: 3m 22s
+	Train Loss: 0.722 | Train Acc: 83.11%
+	 Val. Loss: 2.527 |  Val. Acc: 54.94%
+tensor([0.5420, 0.6249, 0.4501, 0.5300])
+tensor([[624., 301., 203.],
+        [291., 613.,  78.],
+        [388.,  91., 411.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 18 | Epoch Time: 3m 22s
+	Train Loss: 0.718 | Train Acc: 83.46%
+	 Val. Loss: 2.603 |  Val. Acc: 57.31%
+tensor([0.5781, 0.5787, 0.5296, 0.5580])
+tensor([[662., 203., 263.],
+        [315., 570.,  97.],
+        [348.,  55., 487.]], dtype=torch.float64)
+Epoch: 19 | Epoch Time: 3m 22s
+	Train Loss: 0.719 | Train Acc: 83.28%
+	 Val. Loss: 2.692 |  Val. Acc: 55.30%
+tensor([0.4317, 0.6215, 0.6077, 0.5364])
+tensor([[494., 270., 364.],
+        [237., 612., 133.],
+        [264.,  73., 553.]], dtype=torch.float64)
+Epoch: 20 | Epoch Time: 3m 23s
+	Train Loss: 0.715 | Train Acc: 83.60%
+	 Val. Loss: 2.617 |  Val. Acc: 56.65%
+tensor([0.5609, 0.6090, 0.5080, 0.5517])
+tensor([[642., 258., 228.],
+        [306., 599.,  77.],
+        [353.,  79., 458.]], dtype=torch.float64)
+Epoch: 21 | Epoch Time: 3m 24s
+	Train Loss: 0.714 | Train Acc: 83.79%
+	 Val. Loss: 2.806 |  Val. Acc: 56.12%
+tensor([0.5802, 0.5960, 0.4683, 0.5425])
+tensor([[663., 267., 198.],
+        [328., 587.,  67.],
+        [383.,  74., 433.]], dtype=torch.float64)
+Epoch: 22 | Epoch Time: 3m 24s
+	Train Loss: 0.709 | Train Acc: 84.19%
+	 Val. Loss: 2.847 |  Val. Acc: 56.05%
+tensor([0.3975, 0.6568, 0.6458, 0.5426])
+tensor([[455., 309., 364.],
+        [207., 642., 133.],
+        [223.,  82., 585.]], dtype=torch.float64)
+Epoch: 23 | Epoch Time: 3m 25s
+	Train Loss: 0.705 | Train Acc: 84.61%
+	 Val. Loss: 2.935 |  Val. Acc: 55.95%
+tensor([0.5446, 0.5722, 0.5428, 0.5439])
+tensor([[625., 224., 279.],
+        [329., 559.,  94.],
+        [324.,  71., 495.]], dtype=torch.float64)
+Epoch: 24 | Epoch Time: 3m 24s
+	Train Loss: 0.701 | Train Acc: 85.03%
+	 Val. Loss: 2.928 |  Val. Acc: 56.74%
+tensor([0.5048, 0.5484, 0.6367, 0.5513])
+tensor([[582., 211., 335.],
+        [324., 537., 121.],
+        [248.,  59., 583.]], dtype=torch.float64)
+Epoch: 25 | Epoch Time: 3m 23s
+	Train Loss: 0.703 | Train Acc: 84.82%
+	 Val. Loss: 3.112 |  Val. Acc: 55.68%
+tensor([0.4553, 0.6578, 0.5569, 0.5420])
+tensor([[521., 333., 274.],
+        [249., 642.,  91.],
+        [288.,  94., 508.]], dtype=torch.float64)
+../checkpoint/linear_model.txt
+Epoch: 26 | Epoch Time: 3m 25s
+	Train Loss: 0.703 | Train Acc: 84.80%
+	 Val. Loss: 2.982 |  Val. Acc: 57.36%
+tensor([0.5732, 0.5708, 0.5644, 0.5618])
+tensor([[652., 224., 252.],
+        [336., 562.,  84.],
+        [317.,  65., 508.]], dtype=torch.float64)
+Epoch: 27 | Epoch Time: 3m 24s
+	Train Loss: 0.696 | Train Acc: 85.60%
+	 Val. Loss: 3.063 |  Val. Acc: 56.38%
+tensor([0.4730, 0.6159, 0.6055, 0.5524])
+tensor([[541., 249., 338.],
+        [266., 604., 112.],
+        [276.,  67., 547.]], dtype=torch.float64)
+Epoch: 28 | Epoch Time: 3m 24s
+	Train Loss: 0.693 | Train Acc: 85.83%
+	 Val. Loss: 3.178 |  Val. Acc: 55.61%
+tensor([0.5269, 0.6337, 0.4808, 0.5386])
+tensor([[606., 293., 229.],
+        [286., 619.,  77.],
+        [353.,  94., 443.]], dtype=torch.float64)
+Epoch: 29 | Epoch Time: 3m 25s
+	Train Loss: 0.696 | Train Acc: 85.55%
+	 Val. Loss: 3.247 |  Val. Acc: 55.70%
+tensor([0.6118, 0.5701, 0.4529, 0.5386])
+tensor([[702., 235., 191.],
+        [360., 556.,  66.],
+        [401.,  76., 413.]], dtype=torch.float64)
+Epoch: 30 | Epoch Time: 3m 24s
+	Train Loss: 0.696 | Train Acc: 85.57%
+	 Val. Loss: 3.241 |  Val. Acc: 54.58%
+tensor([0.4606, 0.5483, 0.6193, 0.5297])
+tensor([[531., 224., 373.],
+        [312., 539., 131.],
+        [269.,  54., 567.]], dtype=torch.float64)
+	 Test Loss: 2.634 |  Test. Acc: 61.54%
+tensor([0.6129, 0.6551, 0.5479, 0.6022])
+Confusion Matrix:
+ tensor([[687., 209., 204.],
+        [311., 652.,  37.],
+        [337.,  55., 507.]], dtype=torch.float64)
