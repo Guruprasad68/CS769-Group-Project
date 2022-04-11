@@ -13,18 +13,21 @@ Code-Mixed Tweets"
 
 To try out the codes, make sure the following dependencies are there, else run the following commands in your terminal:
 
->pip install torch==1.5.0 <br>
->pip install torchtext==0.6.0 <br>
->!pip install git+https://github.com/huggingface/transformers.git
+```
+pip install torch==1.5.0 <br>
+pip install torchtext==0.6.0 <br>
+pip install git+https://github.com/huggingface/transformers.git
+```
 
 We advise using a virtual environment or a cloud platform like Google Colaboratory.
 
 **Running the code:**
-
->mkdir checkpoint <br>
->cd src <br>
->python IndicBERT_Ensemble.py hinglish <br>
->python IndicBERT_Linear.py
+```
+mkdir checkpoint <br>
+cd src <br>
+python IndicBERT_Ensemble.py hinglish <br>
+python IndicBERT_Linear.py
+```
 
 Similarly for other models.
 
