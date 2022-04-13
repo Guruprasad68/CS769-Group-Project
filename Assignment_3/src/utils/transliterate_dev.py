@@ -1,9 +1,9 @@
 import pandas as pd, re, string, time
 import requests
 word_list =[]
-f1 = open("/content/drive/My Drive/CS769/Semeval_2020_task9_data/Hinglish/Hinglish_test_unalbelled_conll_updated.txt","r")
+f1 = open("/content/drive/My Drive/CS769/Semeval_2020_task9_data/Hinglish/Hinglish_dev_3k_split_conll.txt", "r")#Hinglish_dev_3k_split_conll.txt","r")
 f_label = open("/content/drive/My Drive/CS769/Semeval_2020_task9_data/Hinglish/Hinglish_test_labels.txt","r")
-f = open("/content/drive/My Drive/CS769/BAKSA_IITK/data/hinglish_test_text.txt","a+")
+f = open("/content/drive/My Drive/CS769/BAKSA_IITK/data/hinglish_dev_text_final.txt","a+")
 
 f.write('uid\ttext\tlabel\n')
 
@@ -72,6 +72,9 @@ while(line):
                 transliterated_word_list_copy = transliterated_word_list.copy()
                 # uik
                 transliterated_sentence = "".join(transliterated_word_list)
+                # print(transliterated_sentence, type(transliterated_sentence))
+                # print(transliterated_sentence)
+                # uik
                 transliterated_sentence_copy = "".join(transliterated_word_list)
                 # lts = list(transliterated_sentence); 
                 li=re.findall(r'@\s[a-zA-Z0-9]*\s',transliterated_sentence)
@@ -103,10 +106,10 @@ while(line):
                 # print('info:', R1, list(sentence_id), R1[-4])
                 s_id = re.sub(r'\n', '', sentence_id)
                 # uik
-                transliterated_sentence = str(s_id) + ' ' + R1[0:-3] + '\t' + str(sentiment_label) + '\n'
+                transliterated_sentence = str(s_id) + '\t' + R1[0:-3] + '\t' + str(sentiment_label) + '\n'
 
                 # print('Finally:', transliterated_sentence)#, '\n', list(transliterated_sentence))#, '\n', transliterated_sentence)#, list(transliterated_sentence))
-                # k += 1
+                k += 1
                 # uik
                 # transliterated_sentence = list(transliterated_sentence)
                 # ref_sent = [ elem for elem in li if elem % 2 != 0]
@@ -115,6 +118,8 @@ while(line):
                 # k += 1
                 # if k == 1:
                   # iol
+                # print(transliterated_sentence, list(transliterated_sentence), type(transliterated_sentence))
+                # uik
                 f.write(transliterated_sentence)
                 transliterated_word_list=[]
                 hindi_list =[]
@@ -126,9 +131,9 @@ while(line):
             sentence_id = array[1]
             # print(array)
             # err
-            # print('HERE:', array[1][:-1], type(array[1][:-1]), array[1][:-1], labels[int(array[1][:-1])])
+            # print('HERE:', array[2][:-1], type(array[1][:-1]), array[1][:-1])
             sentiment_label_map = {"negative":0, "positive":2, "neutral":1}
-            sentiment_label = sentiment_label_map[labels[int(array[1][:-1])]]
+            sentiment_label = sentiment_label_map[array[2][:-1]]
             # print(sentiment_label)
             # uiio
         else:
@@ -141,8 +146,8 @@ while(line):
     # print(line)
     # uik
     # if k == 3:
-      # uik
-      # break
+    #   # uik
+    #   break
 
 # print(transliterated_sentence)
 # uik

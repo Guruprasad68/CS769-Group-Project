@@ -1,0 +1,1199 @@
+MT5_ensemble
+--------------
+google/mt5-small Tokenizer Loaded...
+Max input length: 150
+Data loading complete
+Number of training examples: 14000
+Number of validation examples: 3000
+Number of test examples: 2999
+defaultdict(None, {'1': 0, '2': 1, '0': 2})
+Device in use: cuda
+Iterators created
+Downloading google/mt5-small model...
+Some weights of the model checkpoint at google/mt5-small were not used when initializing MT5EncoderModel: ['decoder.block.6.layer.0.SelfAttention.k.weight', 'decoder.block.0.layer.0.SelfAttention.v.weight', 'decoder.block.7.layer.2.DenseReluDense.wi_1.weight', 'decoder.block.3.layer.2.DenseReluDense.wi_1.weight', 'lm_head.weight', 'decoder.block.0.layer.0.layer_norm.weight', 'decoder.block.2.layer.1.EncDecAttention.k.weight', 'decoder.block.2.layer.0.SelfAttention.v.weight', 'decoder.block.3.layer.0.SelfAttention.o.weight', 'decoder.block.1.layer.2.DenseReluDense.wi_1.weight', 'decoder.block.2.layer.2.DenseReluDense.wi_0.weight', 'decoder.block.1.layer.0.SelfAttention.q.weight', 'decoder.block.0.layer.0.SelfAttention.o.weight', 'decoder.block.2.layer.0.layer_norm.weight', 'decoder.block.3.layer.0.SelfAttention.k.weight', 'decoder.block.1.layer.1.EncDecAttention.v.weight', 'decoder.block.2.layer.0.SelfAttention.q.weight', 'decoder.block.0.layer.1.EncDecAttention.o.weight', 'decoder.block.0.layer.2.DenseReluDense.wo.weight', 'decoder.block.0.layer.2.DenseReluDense.wi_1.weight', 'decoder.block.7.layer.2.layer_norm.weight', 'decoder.block.7.layer.1.EncDecAttention.q.weight', 'decoder.block.5.layer.2.layer_norm.weight', 'decoder.block.6.layer.1.EncDecAttention.q.weight', 'decoder.block.5.layer.2.DenseReluDense.wo.weight', 'decoder.block.2.layer.1.layer_norm.weight', 'decoder.block.0.layer.1.EncDecAttention.k.weight', 'decoder.block.7.layer.0.SelfAttention.k.weight', 'decoder.block.7.layer.1.EncDecAttention.o.weight', 'decoder.block.7.layer.0.layer_norm.weight', 'decoder.block.3.layer.1.layer_norm.weight', 'decoder.block.5.layer.2.DenseReluDense.wi_0.weight', 'decoder.block.0.layer.0.SelfAttention.q.weight', 'decoder.block.7.layer.1.layer_norm.weight', 'decoder.block.1.layer.0.layer_norm.weight', 'decoder.block.2.layer.1.EncDecAttention.v.weight', 'decoder.block.3.layer.0.SelfAttention.v.weight', 'decoder.block.3.layer.0.layer_norm.weight', 'decoder.block.0.layer.1.layer_norm.weight', 'decoder.block.2.layer.1.EncDecAttention.q.weight', 'decoder.block.5.layer.0.SelfAttention.v.weight', 'decoder.block.0.layer.2.DenseReluDense.wi_0.weight', 'decoder.block.5.layer.2.DenseReluDense.wi_1.weight', 'decoder.block.5.layer.0.SelfAttention.q.weight', 'decoder.block.1.layer.1.layer_norm.weight', 'decoder.block.1.layer.0.SelfAttention.o.weight', 'decoder.block.3.layer.1.EncDecAttention.k.weight', 'decoder.block.4.layer.2.layer_norm.weight', 'decoder.block.2.layer.2.layer_norm.weight', 'decoder.block.1.layer.2.DenseReluDense.wo.weight', 'decoder.block.4.layer.1.EncDecAttention.k.weight', 'decoder.block.1.layer.0.SelfAttention.k.weight', 'decoder.block.2.layer.2.DenseReluDense.wi_1.weight', 'decoder.block.3.layer.2.DenseReluDense.wo.weight', 'decoder.block.2.layer.0.SelfAttention.o.weight', 'decoder.block.3.layer.0.SelfAttention.q.weight', 'decoder.block.5.layer.1.layer_norm.weight', 'decoder.block.0.layer.1.EncDecAttention.v.weight', 'decoder.block.3.layer.1.EncDecAttention.v.weight', 'decoder.block.5.layer.1.EncDecAttention.k.weight', 'decoder.block.5.layer.1.EncDecAttention.q.weight', 'decoder.block.1.layer.2.DenseReluDense.wi_0.weight', 'decoder.block.6.layer.1.EncDecAttention.v.weight', 'decoder.block.7.layer.0.SelfAttention.q.weight', 'decoder.block.7.layer.0.SelfAttention.v.weight', 'decoder.block.6.layer.0.SelfAttention.q.weight', 'decoder.embed_tokens.weight', 'decoder.block.1.layer.1.EncDecAttention.o.weight', 'decoder.block.4.layer.0.SelfAttention.q.weight', 'decoder.block.4.layer.0.SelfAttention.o.weight', 'decoder.block.4.layer.1.EncDecAttention.o.weight', 'decoder.block.7.layer.0.SelfAttention.o.weight', 'decoder.block.5.layer.1.EncDecAttention.o.weight', 'decoder.block.5.layer.1.EncDecAttention.v.weight', 'decoder.block.6.layer.2.DenseReluDense.wi_0.weight', 'decoder.block.4.layer.2.DenseReluDense.wi_0.weight', 'decoder.block.0.layer.2.layer_norm.weight', 'decoder.block.2.layer.2.DenseReluDense.wo.weight', 'decoder.block.7.layer.2.DenseReluDense.wo.weight', 'decoder.block.1.layer.1.EncDecAttention.q.weight', 'decoder.block.1.layer.2.layer_norm.weight', 'decoder.block.6.layer.0.layer_norm.weight', 'decoder.block.6.layer.1.layer_norm.weight', 'decoder.block.7.layer.1.EncDecAttention.k.weight', 'decoder.block.0.layer.0.SelfAttention.k.weight', 'decoder.block.3.layer.2.layer_norm.weight', 'decoder.block.4.layer.0.SelfAttention.v.weight', 'decoder.block.4.layer.2.DenseReluDense.wo.weight', 'decoder.block.4.layer.1.layer_norm.weight', 'decoder.block.4.layer.0.SelfAttention.k.weight', 'decoder.block.4.layer.0.layer_norm.weight', 'decoder.block.3.layer.2.DenseReluDense.wi_0.weight', 'decoder.block.1.layer.1.EncDecAttention.k.weight', 'decoder.block.3.layer.1.EncDecAttention.o.weight', 'decoder.block.6.layer.0.SelfAttention.v.weight', 'decoder.block.6.layer.0.SelfAttention.o.weight', 'decoder.block.5.layer.0.SelfAttention.k.weight', 'decoder.block.7.layer.2.DenseReluDense.wi_0.weight', 'decoder.block.1.layer.0.SelfAttention.v.weight', 'decoder.block.6.layer.2.DenseReluDense.wi_1.weight', 'decoder.block.6.layer.1.EncDecAttention.o.weight', 'decoder.block.4.layer.1.EncDecAttention.v.weight', 'decoder.block.5.layer.0.layer_norm.weight', 'decoder.block.6.layer.2.DenseReluDense.wo.weight', 'decoder.final_layer_norm.weight', 'decoder.block.4.layer.1.EncDecAttention.q.weight', 'decoder.block.3.layer.1.EncDecAttention.q.weight', 'decoder.block.2.layer.1.EncDecAttention.o.weight', 'decoder.block.2.layer.0.SelfAttention.k.weight', 'decoder.block.4.layer.2.DenseReluDense.wi_1.weight', 'decoder.block.6.layer.1.EncDecAttention.k.weight', 'decoder.block.0.layer.1.EncDecAttention.q.weight', 'decoder.block.5.layer.0.SelfAttention.o.weight', 'decoder.block.0.layer.0.SelfAttention.relative_attention_bias.weight', 'decoder.block.7.layer.1.EncDecAttention.v.weight', 'decoder.block.6.layer.2.layer_norm.weight']
+- This IS expected if you are initializing MT5EncoderModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MT5EncoderModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+google/mt5-small model downloaded
+The BERTCNNSentiment(
+  (bert): MT5EncoderModel(
+    (shared): Embedding(250112, 512)
+    (encoder): T5Stack(
+      (embed_tokens): Embedding(250112, 512)
+      (block): ModuleList(
+        (0): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+                (relative_attention_bias): Embedding(32, 6)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (1): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (2): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (3): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (4): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (5): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (6): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (7): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (final_layer_norm): T5LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (conv_0): Conv2d(1, 100, kernel_size=(2, 512), stride=(1, 1))
+  (conv_1): Conv2d(1, 100, kernel_size=(3, 512), stride=(1, 1))
+  (conv_2): Conv2d(1, 100, kernel_size=(4, 512), stride=(1, 1))
+  (fc): Linear(in_features=300, out_features=3, bias=True)
+  (dropout): Dropout(p=0.3, inplace=False)
+) has 147,402,611 trainable parameters
+The AttentionModel(
+  (bert): MT5EncoderModel(
+    (shared): Embedding(250112, 512)
+    (encoder): T5Stack(
+      (embed_tokens): Embedding(250112, 512)
+      (block): ModuleList(
+        (0): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+                (relative_attention_bias): Embedding(32, 6)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (1): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (2): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (3): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (4): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (5): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (6): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+        (7): T5Block(
+          (layer): ModuleList(
+            (0): T5LayerSelfAttention(
+              (SelfAttention): T5Attention(
+                (q): Linear(in_features=512, out_features=384, bias=False)
+                (k): Linear(in_features=512, out_features=384, bias=False)
+                (v): Linear(in_features=512, out_features=384, bias=False)
+                (o): Linear(in_features=384, out_features=512, bias=False)
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (1): T5LayerFF(
+              (DenseReluDense): T5DenseGatedGeluDense(
+                (wi_0): Linear(in_features=512, out_features=1024, bias=False)
+                (wi_1): Linear(in_features=512, out_features=1024, bias=False)
+                (wo): Linear(in_features=1024, out_features=512, bias=False)
+                (dropout): Dropout(p=0.1, inplace=False)
+                (gelu_act): NewGELUActivation()
+              )
+              (layer_norm): T5LayerNorm()
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (final_layer_norm): T5LayerNorm()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (lstm): LSTM(512, 100)
+  (label): Linear(in_features=100, out_features=3, bias=True)
+) has 147,186,511 trainable parameters
+Parameters for CNN_Model
+bert.shared.weight
+bert.encoder.block.0.layer.0.SelfAttention.q.weight
+bert.encoder.block.0.layer.0.SelfAttention.k.weight
+bert.encoder.block.0.layer.0.SelfAttention.v.weight
+bert.encoder.block.0.layer.0.SelfAttention.o.weight
+bert.encoder.block.0.layer.0.SelfAttention.relative_attention_bias.weight
+bert.encoder.block.0.layer.0.layer_norm.weight
+bert.encoder.block.0.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.0.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.0.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.0.layer.1.layer_norm.weight
+bert.encoder.block.1.layer.0.SelfAttention.q.weight
+bert.encoder.block.1.layer.0.SelfAttention.k.weight
+bert.encoder.block.1.layer.0.SelfAttention.v.weight
+bert.encoder.block.1.layer.0.SelfAttention.o.weight
+bert.encoder.block.1.layer.0.layer_norm.weight
+bert.encoder.block.1.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.1.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.1.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.1.layer.1.layer_norm.weight
+bert.encoder.block.2.layer.0.SelfAttention.q.weight
+bert.encoder.block.2.layer.0.SelfAttention.k.weight
+bert.encoder.block.2.layer.0.SelfAttention.v.weight
+bert.encoder.block.2.layer.0.SelfAttention.o.weight
+bert.encoder.block.2.layer.0.layer_norm.weight
+bert.encoder.block.2.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.2.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.2.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.2.layer.1.layer_norm.weight
+bert.encoder.block.3.layer.0.SelfAttention.q.weight
+bert.encoder.block.3.layer.0.SelfAttention.k.weight
+bert.encoder.block.3.layer.0.SelfAttention.v.weight
+bert.encoder.block.3.layer.0.SelfAttention.o.weight
+bert.encoder.block.3.layer.0.layer_norm.weight
+bert.encoder.block.3.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.3.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.3.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.3.layer.1.layer_norm.weight
+bert.encoder.block.4.layer.0.SelfAttention.q.weight
+bert.encoder.block.4.layer.0.SelfAttention.k.weight
+bert.encoder.block.4.layer.0.SelfAttention.v.weight
+bert.encoder.block.4.layer.0.SelfAttention.o.weight
+bert.encoder.block.4.layer.0.layer_norm.weight
+bert.encoder.block.4.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.4.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.4.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.4.layer.1.layer_norm.weight
+bert.encoder.block.5.layer.0.SelfAttention.q.weight
+bert.encoder.block.5.layer.0.SelfAttention.k.weight
+bert.encoder.block.5.layer.0.SelfAttention.v.weight
+bert.encoder.block.5.layer.0.SelfAttention.o.weight
+bert.encoder.block.5.layer.0.layer_norm.weight
+bert.encoder.block.5.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.5.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.5.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.5.layer.1.layer_norm.weight
+bert.encoder.block.6.layer.0.SelfAttention.q.weight
+bert.encoder.block.6.layer.0.SelfAttention.k.weight
+bert.encoder.block.6.layer.0.SelfAttention.v.weight
+bert.encoder.block.6.layer.0.SelfAttention.o.weight
+bert.encoder.block.6.layer.0.layer_norm.weight
+bert.encoder.block.6.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.6.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.6.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.6.layer.1.layer_norm.weight
+bert.encoder.block.7.layer.0.SelfAttention.q.weight
+bert.encoder.block.7.layer.0.SelfAttention.k.weight
+bert.encoder.block.7.layer.0.SelfAttention.v.weight
+bert.encoder.block.7.layer.0.SelfAttention.o.weight
+bert.encoder.block.7.layer.0.layer_norm.weight
+bert.encoder.block.7.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.7.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.7.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.7.layer.1.layer_norm.weight
+bert.encoder.final_layer_norm.weight
+conv_0.weight
+conv_0.bias
+conv_1.weight
+conv_1.bias
+conv_2.weight
+conv_2.bias
+fc.weight
+fc.bias
+Parameters for Attention_Model
+bert.shared.weight
+bert.encoder.block.0.layer.0.SelfAttention.q.weight
+bert.encoder.block.0.layer.0.SelfAttention.k.weight
+bert.encoder.block.0.layer.0.SelfAttention.v.weight
+bert.encoder.block.0.layer.0.SelfAttention.o.weight
+bert.encoder.block.0.layer.0.SelfAttention.relative_attention_bias.weight
+bert.encoder.block.0.layer.0.layer_norm.weight
+bert.encoder.block.0.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.0.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.0.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.0.layer.1.layer_norm.weight
+bert.encoder.block.1.layer.0.SelfAttention.q.weight
+bert.encoder.block.1.layer.0.SelfAttention.k.weight
+bert.encoder.block.1.layer.0.SelfAttention.v.weight
+bert.encoder.block.1.layer.0.SelfAttention.o.weight
+bert.encoder.block.1.layer.0.layer_norm.weight
+bert.encoder.block.1.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.1.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.1.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.1.layer.1.layer_norm.weight
+bert.encoder.block.2.layer.0.SelfAttention.q.weight
+bert.encoder.block.2.layer.0.SelfAttention.k.weight
+bert.encoder.block.2.layer.0.SelfAttention.v.weight
+bert.encoder.block.2.layer.0.SelfAttention.o.weight
+bert.encoder.block.2.layer.0.layer_norm.weight
+bert.encoder.block.2.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.2.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.2.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.2.layer.1.layer_norm.weight
+bert.encoder.block.3.layer.0.SelfAttention.q.weight
+bert.encoder.block.3.layer.0.SelfAttention.k.weight
+bert.encoder.block.3.layer.0.SelfAttention.v.weight
+bert.encoder.block.3.layer.0.SelfAttention.o.weight
+bert.encoder.block.3.layer.0.layer_norm.weight
+bert.encoder.block.3.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.3.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.3.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.3.layer.1.layer_norm.weight
+bert.encoder.block.4.layer.0.SelfAttention.q.weight
+bert.encoder.block.4.layer.0.SelfAttention.k.weight
+bert.encoder.block.4.layer.0.SelfAttention.v.weight
+bert.encoder.block.4.layer.0.SelfAttention.o.weight
+bert.encoder.block.4.layer.0.layer_norm.weight
+bert.encoder.block.4.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.4.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.4.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.4.layer.1.layer_norm.weight
+bert.encoder.block.5.layer.0.SelfAttention.q.weight
+bert.encoder.block.5.layer.0.SelfAttention.k.weight
+bert.encoder.block.5.layer.0.SelfAttention.v.weight
+bert.encoder.block.5.layer.0.SelfAttention.o.weight
+bert.encoder.block.5.layer.0.layer_norm.weight
+bert.encoder.block.5.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.5.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.5.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.5.layer.1.layer_norm.weight
+bert.encoder.block.6.layer.0.SelfAttention.q.weight
+bert.encoder.block.6.layer.0.SelfAttention.k.weight
+bert.encoder.block.6.layer.0.SelfAttention.v.weight
+bert.encoder.block.6.layer.0.SelfAttention.o.weight
+bert.encoder.block.6.layer.0.layer_norm.weight
+bert.encoder.block.6.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.6.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.6.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.6.layer.1.layer_norm.weight
+bert.encoder.block.7.layer.0.SelfAttention.q.weight
+bert.encoder.block.7.layer.0.SelfAttention.k.weight
+bert.encoder.block.7.layer.0.SelfAttention.v.weight
+bert.encoder.block.7.layer.0.SelfAttention.o.weight
+bert.encoder.block.7.layer.0.layer_norm.weight
+bert.encoder.block.7.layer.1.DenseReluDense.wi_0.weight
+bert.encoder.block.7.layer.1.DenseReluDense.wi_1.weight
+bert.encoder.block.7.layer.1.DenseReluDense.wo.weight
+bert.encoder.block.7.layer.1.layer_norm.weight
+bert.encoder.final_layer_norm.weight
+lstm.weight_ih_l0
+lstm.weight_hh_l0
+lstm.bias_ih_l0
+lstm.bias_hh_l0
+label.weight
+label.bias
+../checkpoint/cnn_model.txt
+Epoch: 01 | Epoch Time: 0m 31s
+	Train Loss: 1.044 | Train Acc: 43.89%
+	 Val. Loss: 0.963 |  Val. Acc: 49.85%
+tensor([0.5103, 0.5275, 0.4313, 0.4858])
+tensor([[571., 238., 319.],
+        [353., 529., 100.],
+        [429.,  63., 398.]], dtype=torch.float64)
+../checkpoint/attention_model.txt
+Epoch: 01 | Epoch Time: 0m 30s
+	Train Loss: 1.046 | Train Acc: 43.48%
+	 Val. Loss: 1.001 |  Val. Acc: 48.08%
+tensor([0.3521, 0.6470, 0.4415, 0.4616])
+tensor([[392., 383., 353.],
+        [234., 643., 105.],
+        [339., 150., 401.]], dtype=torch.float64)
+../checkpoint/cnn_model.txt
+Epoch: 02 | Epoch Time: 0m 30s
+	Train Loss: 0.989 | Train Acc: 48.83%
+	 Val. Loss: 0.948 |  Val. Acc: 50.48%
+tensor([0.5496, 0.5702, 0.3895, 0.4874])
+tensor([[618., 254., 256.],
+        [339., 563.,  80.],
+        [518.,  46., 326.]], dtype=torch.float64)
+Epoch: 02 | Epoch Time: 0m 29s
+	Train Loss: 0.981 | Train Acc: 50.10%
+	 Val. Loss: 0.980 |  Val. Acc: 47.40%
+tensor([0.5055, 0.3667, 0.5355, 0.4575])
+tensor([[571., 158., 399.],
+        [481., 362., 139.],
+        [383.,  25., 482.]], dtype=torch.float64)
+../checkpoint/cnn_model.txt
+Epoch: 03 | Epoch Time: 0m 30s
+	Train Loss: 0.967 | Train Acc: 51.15%
+	 Val. Loss: 0.930 |  Val. Acc: 52.63%
+tensor([0.3621, 0.6966, 0.5430, 0.5100])
+tensor([[408., 348., 372.],
+        [182., 687., 113.],
+        [314.,  98., 478.]], dtype=torch.float64)
+../checkpoint/attention_model.txt
+Epoch: 03 | Epoch Time: 0m 29s
+	Train Loss: 0.966 | Train Acc: 51.70%
+	 Val. Loss: 0.961 |  Val. Acc: 50.21%
+tensor([0.6275, 0.5406, 0.2999, 0.4740])
+tensor([[700., 250., 178.],
+        [378., 538.,  66.],
+        [575.,  53., 262.]], dtype=torch.float64)
+Epoch: 04 | Epoch Time: 0m 31s
+	Train Loss: 0.955 | Train Acc: 52.21%
+	 Val. Loss: 0.936 |  Val. Acc: 53.01%
+tensor([0.6573, 0.6162, 0.2732, 0.5005])
+tensor([[742., 267., 119.],
+        [336., 609.,  37.],
+        [605.,  50., 235.]], dtype=torch.float64)
+Epoch: 04 | Epoch Time: 0m 29s
+	Train Loss: 0.960 | Train Acc: 51.84%
+	 Val. Loss: 0.960 |  Val. Acc: 49.82%
+tensor([0.7111, 0.4599, 0.2563, 0.4588])
+tensor([[799., 201., 128.],
+        [466., 464.,  52.],
+        [615.,  41., 234.]], dtype=torch.float64)
+../checkpoint/cnn_model.txt
+Epoch: 05 | Epoch Time: 0m 30s
+	Train Loss: 0.946 | Train Acc: 52.81%
+	 Val. Loss: 0.899 |  Val. Acc: 55.93%
+tensor([0.3832, 0.7039, 0.5889, 0.5471])
+tensor([[431., 343., 354.],
+        [177., 695., 110.],
+        [260.,  84., 546.]], dtype=torch.float64)
+../checkpoint/attention_model.txt
+Epoch: 05 | Epoch Time: 0m 29s
+	Train Loss: 0.953 | Train Acc: 52.63%
+	 Val. Loss: 0.943 |  Val. Acc: 52.37%
+tensor([0.5563, 0.5450, 0.4321, 0.5068])
+tensor([[623., 242., 263.],
+        [348., 546.,  88.],
+        [439.,  51., 400.]], dtype=torch.float64)
+../checkpoint/cnn_model.txt
+Epoch: 06 | Epoch Time: 0m 30s
+	Train Loss: 0.937 | Train Acc: 53.37%
+	 Val. Loss: 0.902 |  Val. Acc: 56.07%
+tensor([0.5374, 0.6213, 0.5036, 0.5532])
+tensor([[611., 256., 261.],
+        [286., 610.,  86.],
+        [391.,  45., 454.]], dtype=torch.float64)
+Epoch: 06 | Epoch Time: 0m 29s
+	Train Loss: 0.951 | Train Acc: 52.70%
+	 Val. Loss: 0.941 |  Val. Acc: 51.98%
+tensor([0.5718, 0.6459, 0.3068, 0.4902])
+tensor([[639., 316., 173.],
+        [282., 641.,  59.],
+        [544.,  73., 273.]], dtype=torch.float64)
+Epoch: 07 | Epoch Time: 0m 31s
+	Train Loss: 0.934 | Train Acc: 53.57%
+	 Val. Loss: 0.924 |  Val. Acc: 55.72%
+tensor([0.5256, 0.7389, 0.3766, 0.5385])
+tensor([[592., 407., 129.],
+        [207., 729.,  46.],
+        [428., 115., 347.]], dtype=torch.float64)
+../checkpoint/attention_model.txt
+Epoch: 07 | Epoch Time: 0m 29s
+	Train Loss: 0.943 | Train Acc: 52.73%
+	 Val. Loss: 0.933 |  Val. Acc: 53.96%
+tensor([0.5064, 0.6192, 0.4751, 0.5280])
+tensor([[574., 288., 266.],
+        [278., 615.,  89.],
+        [389.,  71., 430.]], dtype=torch.float64)
+../checkpoint/cnn_model.txt
+Epoch: 08 | Epoch Time: 0m 31s
+	Train Loss: 0.931 | Train Acc: 53.59%
+	 Val. Loss: 0.898 |  Val. Acc: 56.85%
+tensor([0.5238, 0.6444, 0.5283, 0.5604])
+tensor([[593., 273., 262.],
+        [256., 637.,  89.],
+        [368.,  52., 470.]], dtype=torch.float64)
+Epoch: 08 | Epoch Time: 0m 29s
+	Train Loss: 0.943 | Train Acc: 53.08%
+	 Val. Loss: 0.951 |  Val. Acc: 51.98%
+tensor([0.5737, 0.7108, 0.2257, 0.4816])
+tensor([[643., 397.,  88.],
+        [250., 705.,  27.],
+        [553., 132., 205.]], dtype=torch.float64)
+Epoch: 09 | Epoch Time: 0m 30s
+	Train Loss: 0.922 | Train Acc: 54.71%
+	 Val. Loss: 0.908 |  Val. Acc: 56.66%
+tensor([0.5769, 0.6757, 0.4184, 0.5542])
+tensor([[653., 297., 178.],
+        [257., 669.,  56.],
+        [453.,  62., 375.]], dtype=torch.float64)
+Epoch: 09 | Epoch Time: 0m 29s
+	Train Loss: 0.936 | Train Acc: 53.67%
+	 Val. Loss: 0.924 |  Val. Acc: 53.97%
+tensor([0.6133, 0.5996, 0.3574, 0.5206])
+tensor([[690., 261., 177.],
+        [330., 597.,  55.],
+        [503.,  56., 331.]], dtype=torch.float64)
+Epoch: 10 | Epoch Time: 0m 30s
+	Train Loss: 0.921 | Train Acc: 54.31%
+	 Val. Loss: 0.925 |  Val. Acc: 56.06%
+tensor([0.4473, 0.7442, 0.4878, 0.5446])
+tensor([[509., 400., 219.],
+        [174., 736.,  72.],
+        [358., 101., 431.]], dtype=torch.float64)
+Epoch: 10 | Epoch Time: 0m 29s
+	Train Loss: 0.933 | Train Acc: 54.14%
+	 Val. Loss: 0.934 |  Val. Acc: 53.43%
+tensor([0.4890, 0.7146, 0.3756, 0.5101])
+tensor([[550., 389., 189.],
+        [212., 708.,  62.],
+        [421., 132., 337.]], dtype=torch.float64)
+Epoch: 11 | Epoch Time: 0m 30s
+	Train Loss: 0.914 | Train Acc: 55.13%
+	 Val. Loss: 0.907 |  Val. Acc: 57.16%
+tensor([0.5800, 0.6782, 0.4240, 0.5585])
+tensor([[658., 315., 155.],
+        [259., 674.,  49.],
+        [445.,  66., 379.]], dtype=torch.float64)
+../checkpoint/attention_model.txt
+Epoch: 11 | Epoch Time: 0m 29s
+	Train Loss: 0.933 | Train Acc: 53.67%
+	 Val. Loss: 0.919 |  Val. Acc: 54.25%
+tensor([0.5087, 0.5568, 0.5422, 0.5335])
+tensor([[578., 222., 328.],
+        [320., 552., 110.],
+        [353.,  43., 494.]], dtype=torch.float64)
+../checkpoint/cnn_model.txt
+Epoch: 12 | Epoch Time: 0m 31s
+	Train Loss: 0.912 | Train Acc: 55.21%
+	 Val. Loss: 0.901 |  Val. Acc: 57.05%
+tensor([0.5537, 0.5605, 0.5757, 0.5644])
+tensor([[631., 217., 280.],
+        [334., 554.,  94.],
+        [335.,  31., 524.]], dtype=torch.float64)
+../checkpoint/attention_model.txt
+Epoch: 12 | Epoch Time: 0m 29s
+	Train Loss: 0.929 | Train Acc: 54.33%
+	 Val. Loss: 0.908 |  Val. Acc: 55.25%
+tensor([0.5263, 0.6598, 0.4480, 0.5404])
+tensor([[592., 326., 210.],
+        [258., 653.,  71.],
+        [408.,  72., 410.]], dtype=torch.float64)
+Epoch: 13 | Epoch Time: 0m 31s
+	Train Loss: 0.908 | Train Acc: 55.76%
+	 Val. Loss: 0.956 |  Val. Acc: 55.28%
+tensor([0.4564, 0.7915, 0.3916, 0.5289])
+tensor([[523., 471., 134.],
+        [147., 785.,  50.],
+        [364., 177., 349.]], dtype=torch.float64)
+Epoch: 13 | Epoch Time: 0m 29s
+	Train Loss: 0.924 | Train Acc: 55.21%
+	 Val. Loss: 0.916 |  Val. Acc: 54.72%
+tensor([0.6720, 0.4578, 0.4627, 0.5320])
+tensor([[762., 161., 205.],
+        [450., 458.,  74.],
+        [445.,  25., 420.]], dtype=torch.float64)
+../checkpoint/cnn_model.txt
+Epoch: 14 | Epoch Time: 0m 30s
+	Train Loss: 0.910 | Train Acc: 55.55%
+	 Val. Loss: 0.888 |  Val. Acc: 58.40%
+tensor([0.5820, 0.5789, 0.5701, 0.5790])
+tensor([[663., 211., 254.],
+        [326., 574.,  82.],
+        [343.,  35., 512.]], dtype=torch.float64)
+Epoch: 14 | Epoch Time: 0m 29s
+	Train Loss: 0.922 | Train Acc: 54.87%
+	 Val. Loss: 0.913 |  Val. Acc: 54.22%
+tensor([0.5391, 0.5489, 0.5141, 0.5331])
+tensor([[611., 227., 290.],
+        [331., 545., 106.],
+        [374.,  50., 466.]], dtype=torch.float64)
+Epoch: 15 | Epoch Time: 0m 30s
+	Train Loss: 0.909 | Train Acc: 55.65%
+	 Val. Loss: 0.901 |  Val. Acc: 56.72%
+tensor([0.3211, 0.6763, 0.7446, 0.5511])
+tensor([[368., 307., 453.],
+        [164., 670., 148.],
+        [156.,  72., 662.]], dtype=torch.float64)
+../checkpoint/attention_model.txt
+Epoch: 15 | Epoch Time: 0m 29s
+	Train Loss: 0.918 | Train Acc: 55.00%
+	 Val. Loss: 0.905 |  Val. Acc: 55.23%
+tensor([0.5317, 0.6122, 0.4864, 0.5406])
+tensor([[602., 268., 258.],
+        [290., 607.,  85.],
+        [382.,  64., 444.]], dtype=torch.float64)
+Epoch: 16 | Epoch Time: 0m 31s
+	Train Loss: 0.908 | Train Acc: 55.26%
+	 Val. Loss: 0.906 |  Val. Acc: 58.16%
+tensor([0.5528, 0.6777, 0.5012, 0.5695])
+tensor([[631., 284., 213.],
+        [240., 671.,  71.],
+        [375.,  74., 441.]], dtype=torch.float64)
+Epoch: 16 | Epoch Time: 0m 29s
+	Train Loss: 0.915 | Train Acc: 54.80%
+	 Val. Loss: 0.909 |  Val. Acc: 55.16%
+tensor([0.5983, 0.5464, 0.4721, 0.5400])
+tensor([[681., 209., 238.],
+        [360., 545.,  77.],
+        [422.,  42., 426.]], dtype=torch.float64)
+Epoch: 17 | Epoch Time: 0m 30s
+	Train Loss: 0.895 | Train Acc: 56.87%
+	 Val. Loss: 0.896 |  Val. Acc: 57.25%
+tensor([0.5267, 0.5747, 0.6115, 0.5693])
+tensor([[596., 216., 316.],
+        [312., 570., 100.],
+        [309.,  32., 549.]], dtype=torch.float64)
+Epoch: 17 | Epoch Time: 0m 29s
+	Train Loss: 0.910 | Train Acc: 55.54%
+	 Val. Loss: 0.951 |  Val. Acc: 50.78%
+tensor([0.7513, 0.4258, 0.2796, 0.4728])
+tensor([[851., 169., 108.],
+        [532., 419.,  31.],
+        [603.,  37., 250.]], dtype=torch.float64)
+Epoch: 18 | Epoch Time: 0m 30s
+	Train Loss: 0.899 | Train Acc: 56.43%
+	 Val. Loss: 0.905 |  Val. Acc: 57.77%
+tensor([0.5347, 0.7095, 0.4736, 0.5692])
+tensor([[605., 352., 171.],
+        [235., 701.,  46.],
+        [379.,  86., 425.]], dtype=torch.float64)
+Epoch: 18 | Epoch Time: 0m 29s
+	Train Loss: 0.907 | Train Acc: 55.83%
+	 Val. Loss: 0.925 |  Val. Acc: 53.21%
+tensor([0.6270, 0.4623, 0.4645, 0.5148])
+tensor([[715., 169., 244.],
+        [438., 457.,  87.],
+        [439.,  32., 419.]], dtype=torch.float64)
+Epoch: 19 | Epoch Time: 0m 30s
+	Train Loss: 0.896 | Train Acc: 57.00%
+	 Val. Loss: 0.965 |  Val. Acc: 55.39%
+tensor([0.3598, 0.8187, 0.4930, 0.5350])
+tensor([[408., 541., 179.],
+        [119., 809.,  54.],
+        [259., 194., 437.]], dtype=torch.float64)
+../checkpoint/attention_model.txt
+Epoch: 19 | Epoch Time: 0m 29s
+	Train Loss: 0.906 | Train Acc: 55.66%
+	 Val. Loss: 0.907 |  Val. Acc: 55.63%
+tensor([0.4297, 0.6692, 0.5556, 0.5434])
+tensor([[488., 307., 333.],
+        [214., 664., 104.],
+        [311.,  62., 517.]], dtype=torch.float64)
+Epoch: 20 | Epoch Time: 0m 31s
+	Train Loss: 0.893 | Train Acc: 56.72%
+	 Val. Loss: 0.907 |  Val. Acc: 58.28%
+tensor([0.5956, 0.6503, 0.4841, 0.5761])
+tensor([[674., 283., 171.],
+        [285., 644.,  53.],
+        [398.,  62., 430.]], dtype=torch.float64)
+Epoch: 20 | Epoch Time: 0m 29s
+	Train Loss: 0.905 | Train Acc: 56.63%
+	 Val. Loss: 0.932 |  Val. Acc: 52.96%
+tensor([0.6345, 0.4245, 0.4855, 0.5137])
+tensor([[725., 148., 255.],
+        [474., 420.,  88.],
+        [436.,  17., 437.]], dtype=torch.float64)
+Epoch: 21 | Epoch Time: 0m 30s
+	Train Loss: 0.893 | Train Acc: 57.34%
+	 Val. Loss: 0.924 |  Val. Acc: 57.23%
+tensor([0.3137, 0.6734, 0.7694, 0.5551])
+tensor([[362., 291., 475.],
+        [166., 666., 150.],
+        [144.,  61., 685.]], dtype=torch.float64)
+Epoch: 21 | Epoch Time: 0m 29s
+	Train Loss: 0.902 | Train Acc: 56.28%
+	 Val. Loss: 0.919 |  Val. Acc: 53.37%
+tensor([0.6509, 0.5440, 0.3566, 0.5172])
+tensor([[738., 228., 162.],
+        [397., 535.,  50.],
+        [525.,  41., 324.]], dtype=torch.float64)
+Epoch: 22 | Epoch Time: 0m 30s
+	Train Loss: 0.889 | Train Acc: 57.56%
+	 Val. Loss: 0.914 |  Val. Acc: 58.03%
+tensor([0.5075, 0.7170, 0.5099, 0.5701])
+tensor([[578., 347., 203.],
+        [212., 711.,  59.],
+        [343.,  97., 450.]], dtype=torch.float64)
+../checkpoint/attention_model.txt
+Epoch: 22 | Epoch Time: 0m 29s
+	Train Loss: 0.899 | Train Acc: 56.37%
+	 Val. Loss: 0.904 |  Val. Acc: 56.72%
+tensor([0.4436, 0.6927, 0.5592, 0.5558])
+tensor([[503., 317., 308.],
+        [206., 684.,  92.],
+        [305.,  76., 509.]], dtype=torch.float64)
+Epoch: 23 | Epoch Time: 0m 31s
+	Train Loss: 0.884 | Train Acc: 57.45%
+	 Val. Loss: 0.922 |  Val. Acc: 57.44%
+tensor([0.5831, 0.6740, 0.4456, 0.5646])
+tensor([[663., 309., 156.],
+        [269., 667.,  46.],
+        [430.,  68., 392.]], dtype=torch.float64)
+Epoch: 23 | Epoch Time: 0m 29s
+	Train Loss: 0.895 | Train Acc: 56.39%
+	 Val. Loss: 0.912 |  Val. Acc: 54.92%
+tensor([0.5543, 0.5024, 0.5646, 0.5422])
+tensor([[634., 179., 315.],
+        [377., 496., 109.],
+        [344.,  30., 516.]], dtype=torch.float64)
+Epoch: 24 | Epoch Time: 0m 30s
+	Train Loss: 0.881 | Train Acc: 57.88%
+	 Val. Loss: 0.914 |  Val. Acc: 58.01%
+tensor([0.5073, 0.7000, 0.5280, 0.5720])
+tensor([[582., 332., 214.],
+        [224., 693.,  65.],
+        [333.,  91., 466.]], dtype=torch.float64)
+Epoch: 24 | Epoch Time: 0m 29s
+	Train Loss: 0.893 | Train Acc: 57.14%
+	 Val. Loss: 0.914 |  Val. Acc: 55.35%
+tensor([0.4660, 0.6298, 0.5575, 0.5436])
+tensor([[534., 276., 318.],
+        [252., 621., 109.],
+        [332.,  59., 499.]], dtype=torch.float64)
+Epoch: 25 | Epoch Time: 0m 31s
+	Train Loss: 0.884 | Train Acc: 57.54%
+	 Val. Loss: 0.916 |  Val. Acc: 56.89%
+tensor([0.4270, 0.7226, 0.5646, 0.5601])
+tensor([[488., 385., 255.],
+        [198., 717.,  67.],
+        [275., 111., 504.]], dtype=torch.float64)
+Epoch: 25 | Epoch Time: 0m 29s
+	Train Loss: 0.892 | Train Acc: 56.16%
+	 Val. Loss: 0.933 |  Val. Acc: 53.55%
+tensor([0.6411, 0.4732, 0.4478, 0.5229])
+tensor([[732., 175., 221.],
+        [436., 467.,  79.],
+        [457.,  28., 405.]], dtype=torch.float64)
+Epoch: 26 | Epoch Time: 0m 31s
+	Train Loss: 0.874 | Train Acc: 58.19%
+	 Val. Loss: 0.907 |  Val. Acc: 57.50%
+tensor([0.4318, 0.6661, 0.6476, 0.5675])
+tensor([[494., 299., 335.],
+        [226., 658.,  98.],
+        [238.,  75., 577.]], dtype=torch.float64)
+Epoch: 26 | Epoch Time: 0m 30s
+	Train Loss: 0.886 | Train Acc: 57.33%
+	 Val. Loss: 0.930 |  Val. Acc: 53.87%
+tensor([0.3348, 0.5486, 0.7515, 0.5239])
+tensor([[384., 209., 535.],
+        [245., 543., 194.],
+        [172.,  35., 683.]], dtype=torch.float64)
+Epoch: 27 | Epoch Time: 0m 31s
+	Train Loss: 0.881 | Train Acc: 57.75%
+	 Val. Loss: 0.917 |  Val. Acc: 56.58%
+tensor([0.3148, 0.6847, 0.7303, 0.5495])
+tensor([[357., 349., 422.],
+        [160., 677., 145.],
+        [152.,  79., 659.]], dtype=torch.float64)
+Epoch: 27 | Epoch Time: 0m 29s
+	Train Loss: 0.887 | Train Acc: 57.09%
+	 Val. Loss: 0.930 |  Val. Acc: 54.44%
+tensor([0.5789, 0.4693, 0.5542, 0.5345])
+tensor([[664., 146., 318.],
+        [419., 460., 103.],
+        [354.,  30., 506.]], dtype=torch.float64)
+Epoch: 28 | Epoch Time: 0m 31s
+	Train Loss: 0.875 | Train Acc: 58.30%
+	 Val. Loss: 0.952 |  Val. Acc: 56.82%
+tensor([0.5655, 0.6931, 0.4385, 0.5587])
+tensor([[644., 333., 151.],
+        [252., 688.,  42.],
+        [428.,  87., 375.]], dtype=torch.float64)
+Epoch: 28 | Epoch Time: 0m 30s
+	Train Loss: 0.886 | Train Acc: 57.61%
+	 Val. Loss: 0.930 |  Val. Acc: 55.58%
+tensor([0.4035, 0.7211, 0.5440, 0.5422])
+tensor([[457., 389., 282.],
+        [177., 713.,  92.],
+        [299., 100., 491.]], dtype=torch.float64)
+Epoch: 29 | Epoch Time: 0m 31s
+	Train Loss: 0.872 | Train Acc: 58.66%
+	 Val. Loss: 0.909 |  Val. Acc: 58.15%
+tensor([0.6036, 0.6362, 0.4842, 0.5766])
+tensor([[683., 276., 169.],
+        [300., 630.,  52.],
+        [402.,  57., 431.]], dtype=torch.float64)
+Epoch: 29 | Epoch Time: 0m 29s
+	Train Loss: 0.882 | Train Acc: 57.20%
+	 Val. Loss: 0.915 |  Val. Acc: 55.70%
+tensor([0.5616, 0.5346, 0.5448, 0.5491])
+tensor([[643., 203., 282.],
+        [358., 529.,  95.],
+        [360.,  36., 494.]], dtype=torch.float64)
+Epoch: 30 | Epoch Time: 0m 31s
+	Train Loss: 0.873 | Train Acc: 58.68%
+	 Val. Loss: 0.898 |  Val. Acc: 57.60%
+tensor([0.4904, 0.6326, 0.6032, 0.5697])
+tensor([[557., 282., 289.],
+        [266., 628.,  88.],
+        [286.,  58., 546.]], dtype=torch.float64)
+Epoch: 30 | Epoch Time: 0m 29s
+	Train Loss: 0.880 | Train Acc: 57.43%
+	 Val. Loss: 0.919 |  Val. Acc: 54.43%
+tensor([0.5241, 0.5698, 0.5123, 0.5347])
+tensor([[597., 242., 289.],
+        [328., 565.,  89.],
+        [371.,  50., 469.]], dtype=torch.float64)
+Epoch: 31 | Epoch Time: 0m 31s
+	Train Loss: 0.871 | Train Acc: 58.66%
+	 Val. Loss: 0.916 |  Val. Acc: 57.53%
+tensor([0.3565, 0.7338, 0.6647, 0.5605])
+tensor([[404., 378., 346.],
+        [152., 725., 105.],
+        [195.,  99., 596.]], dtype=torch.float64)
+Epoch: 31 | Epoch Time: 0m 29s
+	Train Loss: 0.877 | Train Acc: 57.71%
+	 Val. Loss: 0.914 |  Val. Acc: 55.26%
+tensor([0.4928, 0.5749, 0.5726, 0.5451])
+tensor([[561., 226., 341.],
+        [319., 568.,  95.],
+        [323.,  42., 525.]], dtype=torch.float64)
+Epoch: 32 | Epoch Time: 0m 31s
+	Train Loss: 0.869 | Train Acc: 58.40%
+	 Val. Loss: 0.914 |  Val. Acc: 58.32%
+tensor([0.3581, 0.7162, 0.6991, 0.5684])
+tensor([[406., 337., 385.],
+        [153., 706., 123.],
+        [172.,  86., 632.]], dtype=torch.float64)
+Epoch: 32 | Epoch Time: 0m 29s
+	Train Loss: 0.877 | Train Acc: 57.69%
+	 Val. Loss: 0.928 |  Val. Acc: 54.35%
+tensor([0.4970, 0.5688, 0.5456, 0.5364])
+tensor([[567., 250., 311.],
+        [333., 563.,  86.],
+        [338.,  51., 501.]], dtype=torch.float64)
+Epoch: 33 | Epoch Time: 0m 31s
+	Train Loss: 0.868 | Train Acc: 58.51%
+	 Val. Loss: 0.909 |  Val. Acc: 58.27%
+tensor([0.4103, 0.7266, 0.6300, 0.5731])
+tensor([[459., 369., 300.],
+        [169., 719.,  94.],
+        [229.,  94., 567.]], dtype=torch.float64)
+Epoch: 33 | Epoch Time: 0m 29s
+	Train Loss: 0.873 | Train Acc: 58.19%
+	 Val. Loss: 0.916 |  Val. Acc: 55.91%
+tensor([0.4798, 0.6454, 0.5366, 0.5514])
+tensor([[543., 299., 286.],
+        [261., 639.,  82.],
+        [325.,  72., 493.]], dtype=torch.float64)
+../checkpoint/cnn_model.txt
+Epoch: 34 | Epoch Time: 0m 31s
+	Train Loss: 0.866 | Train Acc: 58.81%
+	 Val. Loss: 0.896 |  Val. Acc: 59.23%
+tensor([0.5642, 0.6409, 0.5664, 0.5898])
+tensor([[634., 263., 231.],
+        [271., 636.,  75.],
+        [334.,  54., 502.]], dtype=torch.float64)
+Epoch: 34 | Epoch Time: 0m 30s
+	Train Loss: 0.869 | Train Acc: 58.21%
+	 Val. Loss: 0.926 |  Val. Acc: 54.68%
+tensor([0.4531, 0.5461, 0.6277, 0.5390])
+tensor([[518., 226., 384.],
+        [320., 543., 119.],
+        [278.,  37., 575.]], dtype=torch.float64)
+Epoch: 35 | Epoch Time: 0m 31s
+	Train Loss: 0.869 | Train Acc: 58.43%
+	 Val. Loss: 0.915 |  Val. Acc: 58.09%
+tensor([0.6552, 0.5573, 0.5083, 0.5758])
+tensor([[737., 201., 190.],
+        [369., 551.,  62.],
+        [408.,  33., 449.]], dtype=torch.float64)
+Epoch: 35 | Epoch Time: 0m 29s
+	Train Loss: 0.867 | Train Acc: 58.64%
+	 Val. Loss: 0.938 |  Val. Acc: 54.97%
+tensor([0.3564, 0.5799, 0.7165, 0.5346])
+tensor([[411., 241., 476.],
+        [246., 573., 163.],
+        [186.,  43., 661.]], dtype=torch.float64)
+../checkpoint/cnn_model.txt
+Epoch: 36 | Epoch Time: 0m 31s
+	Train Loss: 0.865 | Train Acc: 58.98%
+	 Val. Loss: 0.897 |  Val. Acc: 59.50%
+tensor([0.5562, 0.6382, 0.5797, 0.5907])
+tensor([[631., 251., 246.],
+        [270., 633.,  79.],
+        [311.,  59., 520.]], dtype=torch.float64)
+Epoch: 36 | Epoch Time: 0m 29s
+	Train Loss: 0.869 | Train Acc: 57.82%
+	 Val. Loss: 0.934 |  Val. Acc: 54.19%
+tensor([0.4034, 0.5806, 0.6404, 0.5329])
+tensor([[459., 259., 410.],
+        [275., 575., 132.],
+        [253.,  46., 591.]], dtype=torch.float64)
+Epoch: 37 | Epoch Time: 0m 30s
+	Train Loss: 0.864 | Train Acc: 58.91%
+	 Val. Loss: 0.904 |  Val. Acc: 59.55%
+tensor([0.5514, 0.6239, 0.6055, 0.5904])
+tensor([[622., 237., 269.],
+        [274., 618.,  90.],
+        [297.,  50., 543.]], dtype=torch.float64)
+Epoch: 37 | Epoch Time: 0m 29s
+	Train Loss: 0.862 | Train Acc: 59.24%
+	 Val. Loss: 0.937 |  Val. Acc: 55.62%
+tensor([0.3771, 0.6376, 0.6500, 0.5428])
+tensor([[430., 286., 412.],
+        [221., 632., 129.],
+        [229.,  58., 603.]], dtype=torch.float64)
+Epoch: 38 | Epoch Time: 0m 30s
+	Train Loss: 0.863 | Train Acc: 59.30%
+	 Val. Loss: 0.902 |  Val. Acc: 59.11%
+tensor([0.5769, 0.6293, 0.5518, 0.5853])
+tensor([[652., 248., 228.],
+        [286., 624.,  72.],
+        [350.,  45., 495.]], dtype=torch.float64)
+Epoch: 38 | Epoch Time: 0m 29s
+	Train Loss: 0.865 | Train Acc: 58.65%
+	 Val. Loss: 0.933 |  Val. Acc: 55.45%
+tensor([0.5433, 0.5804, 0.5152, 0.5480])
+tensor([[622., 238., 268.],
+        [332., 574.,  76.],
+        [386.,  39., 465.]], dtype=torch.float64)
+Epoch: 39 | Epoch Time: 0m 30s
+	Train Loss: 0.860 | Train Acc: 59.52%
+	 Val. Loss: 0.911 |  Val. Acc: 58.98%
+tensor([0.4467, 0.6556, 0.6769, 0.5828])
+tensor([[504., 278., 346.],
+        [218., 651., 113.],
+        [220.,  58., 612.]], dtype=torch.float64)
+Epoch: 39 | Epoch Time: 0m 29s
+	Train Loss: 0.864 | Train Acc: 58.82%
+	 Val. Loss: 0.931 |  Val. Acc: 54.84%
+tensor([0.4857, 0.6317, 0.5142, 0.5415])
+tensor([[553., 300., 275.],
+        [281., 623.,  78.],
+        [367.,  58., 465.]], dtype=torch.float64)
+Epoch: 40 | Epoch Time: 0m 30s
+	Train Loss: 0.857 | Train Acc: 59.24%
+	 Val. Loss: 0.913 |  Val. Acc: 58.42%
+tensor([0.3741, 0.6890, 0.7149, 0.5712])
+tensor([[426., 303., 399.],
+        [171., 684., 127.],
+        [161.,  88., 641.]], dtype=torch.float64)
+Epoch: 40 | Epoch Time: 0m 29s
+	Train Loss: 0.858 | Train Acc: 59.39%
+	 Val. Loss: 0.948 |  Val. Acc: 53.38%
+tensor([0.4730, 0.6195, 0.4906, 0.5253])
+tensor([[538., 326., 264.],
+        [293., 613.,  76.],
+        [343., 102., 445.]], dtype=torch.float64)
+tensor([[602., 245., 253.],
+        [229., 726.,  45.],
+        [277.,  45., 577.]], dtype=torch.float64)
+	 Test. Loss: 0.972 |  Test. Acc: 63.61%
+tensor([0.5441, 0.7224, 0.6252, 0.6264])
