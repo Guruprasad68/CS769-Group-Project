@@ -1,0 +1,137 @@
+Before Training -
+
+Evaluating self_train_data/valid.json using roberta and Saving the Predictions
+Validation Accuracy:  0.3270588235294118
+Evaluating self_train_data/test.json using roberta and Saving the Predictions
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test Accuracy:  0.3231543624161074
+Test Precision: 0.3256134907523069, Recall: 0.20264851450443755 ,F1: 0.20849817678761698
+saving final model
+
+
+
+After Self-Training:
+
+
+Loading Sentences and Labels
+Loading Roberta tokenizer...
+
+Setting Config
+Preparing Dataloaders
+Train Length: 509
+Valid Length: 128
+Dev Length: 93
+Loading Model
+Some weights of the model checkpoint at roberta were not used when initializing RobertaForSequenceClassification: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.decoder.bias', 'roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at roberta and are newly initialized: ['classifier.dense.weight', 'classifier.dense.bias', 'classifier.out_proj.weight', 'classifier.out_proj.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+model loaded
+num_training_steps =  2545
+Starting epoch : 1
+====== Epoch 1 : Step 0 of 509 ======
+====== Epoch 1 : Step 100 of 509 ======
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Valid Accuracy = 0.30077500307540905  ||  Valid f1_score = 0.15824331300847425
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Dev Accuracy = 0.3284033613445378  ||  Dev f1_score = 0.16740412293724452
+====== Epoch 1 : Step 200 of 509 ======
+Valid Accuracy = 0.418870709804404  ||  Valid f1_score = 0.34141748935982
+Dev Accuracy = 0.38554621848739495  ||  Dev f1_score = 0.33879424246652795
+====== Epoch 1 : Step 300 of 509 ======
+Valid Accuracy = 0.5297084512240128  ||  Valid f1_score = 0.5079210926657866
+Dev Accuracy = 0.48403361344537815  ||  Dev f1_score = 0.4807257243586682
+====== Epoch 1 : Step 400 of 509 ======
+Valid Accuracy = 0.6177881658260549  ||  Valid f1_score = 0.611843129189512
+Dev Accuracy = 0.5307563025210084  ||  Dev f1_score = 0.5235672315331529
+====== Epoch 1 : Step 500 of 509 ======
+Valid Accuracy = 0.6496494033706482  ||  Valid f1_score = 0.6502733056494076
+Dev Accuracy = 0.5532773109243697  ||  Dev f1_score = 0.5506532763538478
+Best valid F1 =  0.5506532763538478
+Saving Model
+Starting epoch : 2
+====== Epoch 2 : Step 0 of 509 ======
+====== Epoch 2 : Step 100 of 509 ======
+Valid Accuracy = 0.6200024603272235  ||  Valid f1_score = 0.6052223896573291
+Dev Accuracy = 0.5388235294117647  ||  Dev f1_score = 0.5241566633516824
+====== Epoch 2 : Step 200 of 509 ======
+Valid Accuracy = 0.6692090047976381  ||  Valid f1_score = 0.6682141927019377
+Dev Accuracy = 0.5559663865546218  ||  Dev f1_score = 0.5494794781698782
+====== Epoch 2 : Step 300 of 509 ======
+Valid Accuracy = 0.6802804773034814  ||  Valid f1_score = 0.6828105626272037
+Dev Accuracy = 0.5704201680672268  ||  Dev f1_score = 0.5701901814174585
+====== Epoch 2 : Step 400 of 509 ======
+Valid Accuracy = 0.6931971952269652  ||  Valid f1_score = 0.6939450036683411
+Dev Accuracy = 0.5737815126050421  ||  Dev f1_score = 0.5704964623466277
+====== Epoch 2 : Step 500 of 509 ======
+Valid Accuracy = 0.6908598843646205  ||  Valid f1_score = 0.688084807883499
+Dev Accuracy = 0.5690756302521008  ||  Dev f1_score = 0.5593601231915493
+Best valid F1 =  0.5593601231915493
+Saving Model
+Starting epoch : 3
+====== Epoch 3 : Step 0 of 509 ======
+====== Epoch 3 : Step 100 of 509 ======
+Valid Accuracy = 0.6629351703776603  ||  Valid f1_score = 0.6480184834758828
+Dev Accuracy = 0.5566386554621848  ||  Dev f1_score = 0.5296097291895264
+====== Epoch 3 : Step 200 of 509 ======
+Valid Accuracy = 0.702792471398696  ||  Valid f1_score = 0.7048619446598963
+Dev Accuracy = 0.5811764705882353  ||  Dev f1_score = 0.579367882723029
+====== Epoch 3 : Step 300 of 509 ======
+Valid Accuracy = 0.7058678804280969  ||  Valid f1_score = 0.7059395086622611
+Dev Accuracy = 0.5801680672268907  ||  Dev f1_score = 0.5746824925364887
+====== Epoch 3 : Step 400 of 509 ======
+Valid Accuracy = 0.7084512240127937  ||  Valid f1_score = 0.7085084081254337
+Dev Accuracy = 0.5811764705882353  ||  Dev f1_score = 0.574678402957944
+====== Epoch 3 : Step 500 of 509 ======
+Valid Accuracy = 0.7144790257104194  ||  Valid f1_score = 0.7155421133348036
+Dev Accuracy = 0.5842016806722689  ||  Dev f1_score = 0.5795772128010195
+Best valid F1 =  0.5795772128010195
+Saving Model
+Starting epoch : 4
+====== Epoch 4 : Step 0 of 509 ======
+====== Epoch 4 : Step 100 of 509 ======
+Valid Accuracy = 0.699224996924591  ||  Valid f1_score = 0.6913572134676702
+Dev Accuracy = 0.5757983193277311  ||  Dev f1_score = 0.5553783528862232
+====== Epoch 4 : Step 200 of 509 ======
+Valid Accuracy = 0.7176774511009965  ||  Valid f1_score = 0.7185011991517115
+Dev Accuracy = 0.5845378151260504  ||  Dev f1_score = 0.5801336410046652
+====== Epoch 4 : Step 300 of 509 ======
+Valid Accuracy = 0.7187845983515807  ||  Valid f1_score = 0.7187699334085537
+Dev Accuracy = 0.5821848739495799  ||  Dev f1_score = 0.5767383131831939
+====== Epoch 4 : Step 400 of 509 ======
+Valid Accuracy = 0.7227211219092139  ||  Valid f1_score = 0.7227384617394158
+Dev Accuracy = 0.5825210084033613  ||  Dev f1_score = 0.5771161428941459
+====== Epoch 4 : Step 500 of 509 ======
+Valid Accuracy = 0.7253044654939107  ||  Valid f1_score = 0.7258672176448876
+Dev Accuracy = 0.5842016806722689  ||  Dev f1_score = 0.5794688987909327
+Starting epoch : 5
+====== Epoch 5 : Step 0 of 509 ======
+====== Epoch 5 : Step 100 of 509 ======
+Valid Accuracy = 0.7152171238774757  ||  Valid f1_score = 0.711138859667709
+Dev Accuracy = 0.5845378151260504  ||  Dev f1_score = 0.5701535529358459
+====== Epoch 5 : Step 200 of 509 ======
+Valid Accuracy = 0.7250584327715586  ||  Valid f1_score = 0.7244054394790084
+Dev Accuracy = 0.585546218487395  ||  Dev f1_score = 0.5787205688584232
+====== Epoch 5 : Step 300 of 509 ======
+Valid Accuracy = 0.7267806618280231  ||  Valid f1_score = 0.7267508247709848
+Dev Accuracy = 0.584873949579832  ||  Dev f1_score = 0.5791936790724831
+====== Epoch 5 : Step 400 of 509 ======
+Valid Accuracy = 0.7273957436339034  ||  Valid f1_score = 0.7278721694557141
+Dev Accuracy = 0.584873949579832  ||  Dev f1_score = 0.5801960206155075
+====== Epoch 5 : Step 500 of 509 ======
+Valid Accuracy = 0.7267806618280231  ||  Valid f1_score = 0.7274151815190978
+Dev Accuracy = 0.5865546218487395  ||  Dev f1_score = 0.5820182766787468
+Best valid F1 =  0.5820182766787468
+Saving Model
+Training complete!
+
+Evaluating self_train_data/valid.json using roberta and Saving the Predictions
+Validation Accuracy:  0.5865546218487395
+Evaluating self_train_data/test.json using roberta and Saving the Predictions
+Test Accuracy:  0.6315436241610738
+Test Precision: 0.6396312873671851, Recall: 0.6253112449744219 ,F1: 0.6279257316957451
+saving final model
