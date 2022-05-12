@@ -1,0 +1,156 @@
+Before self-training-
+# {'Model Info': 'Setup self.model training for bert'}
+# Loading Sentences and Labels
+# Loading BERT tokenizer...
+
+# Setting Config
+# Preparing Dataloaders
+# Loading Model
+# model loaded
+# Evaluating and Saving the Predictions
+# Validation Accuracy:  0.7129411764705882
+# Evaluating and Saving the Predictions
+# Test Accuracy:  0.663758389261745
+# Test Precision: 0.6778377304821307, Recall: 0.6640190212227087 ,F1: 0.654648631333003
+
+
+
+Self-Training - 
+wandb: wandb version 0.12.15 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+Tracking run with wandb version 0.10.5
+Syncing run bert 25.04.22 to Weights & Biases (Documentation).
+Project page: https://wandb.ai/769/hinglish
+Run page: https://wandb.ai/769/hinglish/runs/3dmytvo4
+Run data is saved locally in wandb/run-20220425_114034-3dmytvo4
+
+{'Model Info': 'Setup self.model training for bert'}
+Loading Sentences and Labels
+Loading BERT tokenizer...
+
+Setting Config
+Preparing Dataloaders
+Loading Model
+model loaded
+num_training_steps =  6861
+Starting epoch : 1
+====== Epoch 1 : Step 1 of 2287 ======
+====== Epoch 1 : Step 101 of 2287 ======
+====== Epoch 1 : Step 201 of 2287 ======
+====== Epoch 1 : Step 301 of 2287 ======
+====== Epoch 1 : Step 401 of 2287 ======
+====== Epoch 1 : Step 501 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.8813725490196078
+valid_f1 =  0.8646510700089277
+====== Epoch 1 : Step 601 of 2287 ======
+====== Epoch 1 : Step 701 of 2287 ======
+====== Epoch 1 : Step 801 of 2287 ======
+====== Epoch 1 : Step 901 of 2287 ======
+====== Epoch 1 : Step 1001 of 2287 ======
+====== Epoch 1 : Step 1101 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.8779411764705882
+valid_f1 =  0.8573524691190882
+====== Epoch 1 : Step 1201 of 2287 ======
+====== Epoch 1 : Step 1301 of 2287 ======
+====== Epoch 1 : Step 1401 of 2287 ======
+====== Epoch 1 : Step 1501 of 2287 ======
+====== Epoch 1 : Step 1601 of 2287 ======
+====== Epoch 1 : Step 1701 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.8870098039215686
+valid_f1 =  0.8699457278771915
+====== Epoch 1 : Step 1801 of 2287 ======
+====== Epoch 1 : Step 1901 of 2287 ======
+====== Epoch 1 : Step 2001 of 2287 ======
+====== Epoch 1 : Step 2101 of 2287 ======
+====== Epoch 1 : Step 2201 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.8943627450980393
+valid_f1 =  0.8783406727745943
+Best valid F1 =  0.8783406727745943
+Saving Model
+Starting epoch : 2
+====== Epoch 2 : Step 1 of 2287 ======
+====== Epoch 2 : Step 101 of 2287 ======
+====== Epoch 2 : Step 201 of 2287 ======
+====== Epoch 2 : Step 301 of 2287 ======
+====== Epoch 2 : Step 401 of 2287 ======
+====== Epoch 2 : Step 501 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.8767156862745098
+valid_f1 =  0.8597388174171393
+====== Epoch 2 : Step 601 of 2287 ======
+====== Epoch 2 : Step 701 of 2287 ======
+====== Epoch 2 : Step 801 of 2287 ======
+====== Epoch 2 : Step 901 of 2287 ======
+====== Epoch 2 : Step 1001 of 2287 ======
+====== Epoch 2 : Step 1101 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.8862745098039215
+valid_f1 =  0.8696760129654266
+====== Epoch 2 : Step 1201 of 2287 ======
+====== Epoch 2 : Step 1301 of 2287 ======
+====== Epoch 2 : Step 1401 of 2287 ======
+====== Epoch 2 : Step 1501 of 2287 ======
+====== Epoch 2 : Step 1601 of 2287 ======
+====== Epoch 2 : Step 1701 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.8985294117647059
+valid_f1 =  0.882229480579204
+====== Epoch 2 : Step 1801 of 2287 ======
+====== Epoch 2 : Step 1901 of 2287 ======
+====== Epoch 2 : Step 2001 of 2287 ======
+====== Epoch 2 : Step 2101 of 2287 ======
+====== Epoch 2 : Step 2201 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.8995098039215687
+valid_f1 =  0.8835092575033687
+Best valid F1 =  0.8835092575033687
+Saving Model
+Starting epoch : 3
+====== Epoch 3 : Step 1 of 2287 ======
+====== Epoch 3 : Step 101 of 2287 ======
+====== Epoch 3 : Step 201 of 2287 ======
+====== Epoch 3 : Step 301 of 2287 ======
+====== Epoch 3 : Step 401 of 2287 ======
+====== Epoch 3 : Step 501 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.8916666666666667
+valid_f1 =  0.8745896125499111
+====== Epoch 3 : Step 601 of 2287 ======
+====== Epoch 3 : Step 701 of 2287 ======
+====== Epoch 3 : Step 801 of 2287 ======
+====== Epoch 3 : Step 901 of 2287 ======
+====== Epoch 3 : Step 1001 of 2287 ======
+====== Epoch 3 : Step 1101 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.9019607843137255
+valid_f1 =  0.8874315718928113
+====== Epoch 3 : Step 1201 of 2287 ======
+====== Epoch 3 : Step 1301 of 2287 ======
+====== Epoch 3 : Step 1401 of 2287 ======
+====== Epoch 3 : Step 1501 of 2287 ======
+====== Epoch 3 : Step 1601 of 2287 ======
+====== Epoch 3 : Step 1701 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.9022058823529412
+valid_f1 =  0.886634274440381
+====== Epoch 3 : Step 1801 of 2287 ======
+====== Epoch 3 : Step 1901 of 2287 ======
+====== Epoch 3 : Step 2001 of 2287 ======
+====== Epoch 3 : Step 2101 of 2287 ======
+====== Epoch 3 : Step 2201 of 2287 ======
+nb_eval_steps =  255
+Valid Accuracy: 0.9012254901960784
+valid_f1 =  0.8854771151401997
+Best valid F1 =  0.8854771151401997
+Saving Model
+Training complete!
+
+Evaluating and Saving the Predictions
+Validation Accuracy:  0.7126050420168067
+Evaluating and Saving the Predictions
+Test Accuracy:  0.6805369127516778
+Test Precision: 0.6859070699472505, Recall: 0.6807145412836776 ,F1: 0.682592499278682

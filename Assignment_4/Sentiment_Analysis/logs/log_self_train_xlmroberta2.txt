@@ -1,0 +1,140 @@
+
+
+lr = 1e-6
+
+
+Test. Loss: 0.856 |  Test. Acc: 63.67%
+tensor([0.4243, 0.6485, 0.8372, 0.6160])
+Confusion Matrix:
+ tensor([[468., 290., 329.],
+        [197., 591., 109.],
+        [114.,  43., 839.]], dtype=torch.float64)
+
+       
+        
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 01 | Epoch Time: 6m 38s
+	Train Loss: 1.087 | Train Acc: 38.22%
+	 Val. Loss: 1.081 |  Val. Acc: 41.71%
+tensor([0.4338, 0.5076, 0.2870, 0.3965])
+tensor([[488., 402., 218.],
+        [298., 467., 125.],
+        [459., 230., 288.]], dtype=torch.float64)
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 02 | Epoch Time: 6m 52s
+	Train Loss: 0.943 | Train Acc: 55.40%
+	 Val. Loss: 0.985 |  Val. Acc: 51.56%
+tensor([0.2531, 0.5261, 0.7668, 0.4806])
+tensor([[288., 316., 504.],
+        [155., 482., 253.],
+        [ 98., 113., 766.]], dtype=torch.float64)
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 03 | Epoch Time: 6m 51s
+	Train Loss: 0.842 | Train Acc: 63.07%
+	 Val. Loss: 0.946 |  Val. Acc: 55.82%
+tensor([0.2872, 0.6560, 0.7295, 0.5258])
+tensor([[329., 412., 367.],
+        [167., 605., 118.],
+        [ 96., 153., 728.]], dtype=torch.float64)
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 04 | Epoch Time: 6m 52s
+	Train Loss: 0.788 | Train Acc: 66.56%
+	 Val. Loss: 0.964 |  Val. Acc: 55.72%
+tensor([0.3283, 0.5525, 0.7853, 0.5282])
+tensor([[372., 314., 422.],
+        [221., 510., 159.],
+        [ 97., 103., 777.]], dtype=torch.float64)
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 05 | Epoch Time: 6m 51s
+	Train Loss: 0.759 | Train Acc: 68.86%
+	 Val. Loss: 0.955 |  Val. Acc: 56.68%
+tensor([0.3357, 0.6037, 0.7448, 0.5384])
+tensor([[381., 355., 372.],
+        [212., 564., 114.],
+        [112., 122., 743.]], dtype=torch.float64)
+Epoch: 06 | Epoch Time: 6m 51s
+	Train Loss: 0.729 | Train Acc: 70.36%
+	 Val. Loss: 0.989 |  Val. Acc: 56.52%
+tensor([0.2791, 0.6508, 0.7611, 0.5312])
+tensor([[320., 399., 389.],
+        [157., 607., 126.],
+        [101., 120., 756.]], dtype=torch.float64)
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 07 | Epoch Time: 6m 50s
+	Train Loss: 0.699 | Train Acc: 72.26%
+	 Val. Loss: 0.989 |  Val. Acc: 57.05%
+tensor([0.3073, 0.6292, 0.7645, 0.5384])
+tensor([[352., 364., 392.],
+        [172., 588., 130.],
+        [104., 114., 759.]], dtype=torch.float64)
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 08 | Epoch Time: 6m 52s
+	Train Loss: 0.681 | Train Acc: 73.24%
+	 Val. Loss: 1.004 |  Val. Acc: 58.14%
+tensor([0.3712, 0.5852, 0.7695, 0.5548])
+tensor([[423., 288., 397.],
+        [207., 546., 137.],
+        [116.,  97., 764.]], dtype=torch.float64)
+Epoch: 09 | Epoch Time: 6m 50s
+	Train Loss: 0.662 | Train Acc: 74.30%
+	 Val. Loss: 1.018 |  Val. Acc: 58.04%
+tensor([0.3245, 0.6604, 0.7487, 0.5515])
+tensor([[372., 373., 363.],
+        [168., 615., 107.],
+        [116., 118., 743.]], dtype=torch.float64)
+Epoch: 10 | Epoch Time: 6m 50s
+	Train Loss: 0.644 | Train Acc: 75.18%
+	 Val. Loss: 1.042 |  Val. Acc: 58.38%
+tensor([0.3110, 0.6551, 0.7846, 0.5523])
+tensor([[356., 357., 395.],
+        [149., 606., 135.],
+        [ 94., 108., 775.]], dtype=torch.float64)
+
+        
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 11 | Epoch Time: 6m 46s
+	Train Loss: 0.660 | Train Acc: 74.29%
+	 Val. Loss: 1.025 |  Val. Acc: 57.84%
+tensor([0.3155, 0.6402, 0.7734, 0.5475])
+tensor([[362., 358., 388.],
+        [160., 594., 136.],
+        [102., 107., 768.]], dtype=torch.float64)
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 12 | Epoch Time: 6m 51s
+	Train Loss: 0.637 | Train Acc: 75.16%
+	 Val. Loss: 1.052 |  Val. Acc: 58.25%
+tensor([0.3111, 0.6381, 0.7928, 0.5498])
+tensor([[357., 342., 409.],
+        [154., 592., 144.],
+        [ 92., 102., 783.]], dtype=torch.float64)
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 13 | Epoch Time: 6m 50s
+	Train Loss: 0.614 | Train Acc: 76.42%
+	 Val. Loss: 1.073 |  Val. Acc: 58.64%
+tensor([0.3316, 0.6445, 0.7815, 0.5578])
+tensor([[377., 344., 387.],
+        [155., 597., 138.],
+        [ 95., 109., 773.]], dtype=torch.float64)
+Epoch: 14 | Epoch Time: 6m 51s
+	Train Loss: 0.597 | Train Acc: 77.17%
+	 Val. Loss: 1.075 |  Val. Acc: 58.62%
+tensor([0.2884, 0.7046, 0.7673, 0.5529])
+tensor([[332., 398., 378.],
+        [126., 651., 113.],
+        [ 94., 122., 761.]], dtype=torch.float64)
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 15 | Epoch Time: 6m 50s
+	Train Loss: 0.583 | Train Acc: 77.94%
+	 Val. Loss: 1.063 |  Val. Acc: 59.15%
+tensor([0.3178, 0.7010, 0.7541, 0.5623])
+tensor([[363., 389., 356.],
+        [141., 649., 100.],
+        [105., 124., 748.]], dtype=torch.float64)
+../checkpoint/self_train_xlmRoberta.txt
+Epoch: 16 | Epoch Time: 6m 50s
+	Train Loss: 0.568 | Train Acc: 78.57%
+	 Val. Loss: 1.085 |  Val. Acc: 59.81%
+tensor([0.3344, 0.6883, 0.7691, 0.5700])
+tensor([[383., 367., 358.],
+        [147., 638., 105.],
+        [104., 113., 760.]], dtype=torch.float64)
