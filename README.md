@@ -12,6 +12,7 @@ Apart from re-implementing their work, we also implemented their idea on other p
 **Assignment_4** Folder contains continuation of work on Sentiment Analysis from the last assignment using Self-Training. We also study Hindi-English code-switched NER using [IIITH](https://github.com/SilentFlame/Named-Entity-Recognition/tree/master/Twitterdata)'s dataset. We first finetune different pre-trained models of the BERT family on this dataset using just a linear layer, and later explore the idea of Self-Training for NER. The [XLM-RoBERTa](https://arxiv.org/abs/1911.02116) and [Bert-Large](https://arxiv.org/pdf/1810.04805.pdf) models gave us improvement on the F1 score.
 
 For both the tasks, we use unlabeled data released by the authors of [HinglishNLP at SemEval-2020 Task 9](https://aclanthology.org/2020.semeval-1.119/).
+For Assignment 4, we use some parts and models from https://github.com/NirantK/Hinglish
 
 
 **Note:** Assignment 3 codes related to finetuning with a linear layer, pre-processing data were written by us and rest were modified from https://github.com/keshav22bansal/BAKSA_IITK.
