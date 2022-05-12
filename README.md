@@ -17,3 +17,5 @@ For both the tasks, we use unlabeled data released by the authors of [HinglishNL
 **Note:** Assignment 3 codes related to finetuning with a linear layer, pre-processing data were written by us and rest were modified from https://github.com/keshav22bansal/BAKSA_IITK.
 
 More detailed information about Assignment 3 can be found in the [report](https://drive.google.com/file/d/17yPAq8MD6m2nbfHpXC-YWdSe_PWX56tm/view?usp=sharing) and Assignment 4 can be found in the [report](https://drive.google.com/file/d/1zbWyti9VyAQbq0QIMq1fgd2zKsU7l_CG/view?usp=sharing) 
+
+**Detailed README for the assignments in their respective folders.**
