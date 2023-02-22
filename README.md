@@ -1,5 +1,5 @@
 # CS769-Group-Project
-This repository is for Assignment 3 and 4 of UW Madison's Spring 22 course CS769: Advanced Natural Language Processing by Dr. Junjie Hu.
+This repository is for Semester long project (Assignment 3 and 4 mainly) of UW Madison's Spring 22 course CS769: Advanced Natural Language Processing by Dr. Junjie Hu.
 
 Topic : Sentiment Analyisis and Named Entity Recognition of Code-Switched Hinglish(Hindi+English) Social Media Data
 
